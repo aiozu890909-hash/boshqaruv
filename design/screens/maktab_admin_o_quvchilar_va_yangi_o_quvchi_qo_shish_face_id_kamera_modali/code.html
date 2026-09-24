@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+
+<html lang="uz"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@500&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "primary-fixed": "#d5e3ff",
+          "on-tertiary-fixed-variant": "#683d00",
+          "inverse-on-surface": "#eaf1ff",
+          "outline-variant": "#c4c6d0",
+          "inverse-surface": "#233144",
+          "on-surface": "#0d1c2e",
+          "on-primary-fixed-variant": "#2a4771",
+          "tertiary-fixed-dim": "#ffb86a",
+          "secondary-container": "#8cc6ff",
+          "surface-container-lowest": "#ffffff",
+          "inverse-primary": "#abc8f9",
+          "primary": "#00244b",
+          "on-primary-fixed": "#001b3c",
+          "primary-container": "#1b3a63",
+          "on-secondary-container": "#005284",
+          "secondary-fixed": "#cfe5ff",
+          "surface-bright": "#f8f9ff",
+          "on-primary-container": "#88a5d4",
+          "surface-container-highest": "#d5e3fc",
+          "on-error-container": "#93000a",
+          "on-surface-variant": "#43474e",
+          "surface-dim": "#ccdbf3",
+          "error": "#ba1a1a",
+          "background": "#f8f9ff",
+          "surface-tint": "#435f8a",
+          "on-secondary": "#ffffff",
+          "tertiary": "#371e00",
+          "on-tertiary": "#ffffff",
+          "tertiary-container": "#553100",
+          "outline": "#74777f",
+          "error-container": "#ffdad6",
+          "on-tertiary-container": "#e09231",
+          "surface-container": "#e6eeff",
+          "surface": "#f8f9ff",
+          "primary-fixed-dim": "#abc8f9",
+          "on-background": "#0d1c2e",
+          "on-tertiary-fixed": "#2c1700",
+          "tertiary-fixed": "#ffdcbc",
+          "secondary-fixed-dim": "#98cbff",
+          "on-secondary-fixed": "#001d33",
+          "surface-variant": "#d5e3fc",
+          "on-error": "#ffffff",
+          "secondary": "#1e6296",
+          "on-primary": "#ffffff",
+          "surface-container-high": "#dce9ff",
+          "surface-container-low": "#eff4ff",
+          "on-secondary-fixed-variant": "#004a77"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.125rem",
+          "lg": "0.25rem",
+          "xl": "0.5rem",
+          "full": "0.75rem"
+        },
+        "spacing": {
+          "gutter": "1.25rem",
+          "margin": "1.75rem",
+          "space-sm": "0.5rem",
+          "space-md": "0.875rem",
+          "space-xl": "1.75rem",
+          "space-lg": "1.25rem",
+          "space-xs": "0.25rem"
+        },
+        "fontFamily": {
+          "label-sm": [
+            "Inter"
+          ],
+          "body-sm": [
+            "Inter"
+          ],
+          "body-md": [
+            "Inter"
+          ],
+          "headline-md": [
+            "Plus Jakarta Sans"
+          ],
+          "label-lg": [
+            "Inter"
+          ],
+          "code-sm": [
+            "JetBrains Mono"
+          ],
+          "label-md": [
+            "Inter"
+          ],
+          "headline-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-xl": [
+            "Plus Jakarta Sans"
+          ],
+          "body-lg": [
+            "Inter"
+          ]
+        },
+        "fontSize": {
+          "label-sm": [
+            "11px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.03em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-sm": [
+            "13px",
+            {
+              "lineHeight": "18px",
+              "fontWeight": "400"
+            }
+          ],
+          "body-md": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-md": [
+            "20px",
+            {
+              "lineHeight": "28px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-lg": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "code-sm": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "fontWeight": "500"
+            }
+          ],
+          "label-md": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.02em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-sm": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "letterSpacing": "-0.005em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-lg": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-xl": [
+            "30px",
+            {
+              "lineHeight": "38px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "700"
+            }
+          ],
+          "body-lg": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "400"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between select-none"><div class="flex flex-col"><div class="h-16 px-space-md flex items-center gap-space-sm bg-surface-container-low"><img alt="Yagona Ta'lim Davomat Logotipi" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XW9nFc8VtDVHa6yr5Ur1MRh7Ac5X31mAG9kC91N9IZuRbvzS4axscACAOKo8ISsocbG7mCFZykzjJXDjr-jKzvEQgy6bKKac4MtRSYZKKrMTRCO4cLuoXuF7XNItZMmal6WeJ0i_FEp03WE7Ss-fdQqaGiyzPPwKhzNNr8zkPZaPXBYxUw973PYba-bVLs1kyfB2TMpDMHIh27HH5fCk4RjluqIHpq13KZuu9MmCQXcF3pm7aqYmaBtmc"/><div class="flex flex-col min-w-0"><span class="font-headline-sm text-headline-sm text-primary truncate leading-tight">Yagona Ta'lim</span><span class="font-label-sm text-label-sm text-secondary truncate tracking-tight">Davomat &amp; Nazorat</span></div></div><div class="px-space-md py-space-sm bg-surface-container-lowest"><div class="p-space-sm bg-surface-container-low rounded-lg"><div class="flex items-center justify-between mb-space-xs"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Amaldagi Rol</span><span class="h-2 w-2 rounded-full bg-secondary"></span></div><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px] text-secondary">verified_user</span><span class="font-label-md text-label-md text-primary font-semibold truncate">Respublika Nazorati</span></div></div></div><nav class="px-space-sm mt-space-xs space-y-1" data-active-classes="bg-primary text-on-primary font-semibold shadow-[0_1px_3px_0_rgba(22,50,92,0.06)]"><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="bosh-sahifa" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span>Bosh sahifa</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="viloyatlar" href="#"><span class="material-symbols-outlined text-[20px]">map</span><span>Viloyatlar</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="tumanlar" href="#"><span class="material-symbols-outlined text-[20px]">location_city</span><span>Tumanlar</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="maktablar" href="#"><span class="material-symbols-outlined text-[20px]">school</span><span>Maktablar</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="oquvchilar" href="#"><span class="material-symbols-outlined text-[20px]">groups</span><span>O'quvchilar</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="davomat" href="#"><span class="material-symbols-outlined text-[20px]">fact_check</span><span>Davomat</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="qurilmalar" href="#"><span class="material-symbols-outlined text-[20px]">camera_front</span><span>Qurilmalar</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="hisobotlar" href="#"><span class="material-symbols-outlined text-[20px]">bar_chart</span><span>Hisobotlar</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="sozlamalar" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span>Sozlamalar</span></a></nav></div><div class="p-space-md bg-surface-container-low"><div class="p-space-sm bg-surface-container-lowest rounded-lg shadow-[0_1px_3px_0_rgba(22,50,92,0.06)] flex flex-col gap-1"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-surface-variant">Face ID Gateway</span><span class="font-code-sm text-code-sm text-secondary">v2.4-rt</span></div><div class="flex items-center gap-space-xs mt-0.5"><span class="inline-block w-2.5 h-2.5 rounded-full bg-secondary animate-pulse"></span><span class="font-label-md text-label-md text-on-surface font-medium">Gateway Faol</span></div></div></div></aside><div class="pl-64 flex flex-col min-h-screen"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-xl"><div class="flex items-center gap-space-lg flex-1 max-w-2xl"><div class="relative w-72"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-[18px] text-outline">search</span><input class="w-full pl-9 pr-4 py-1.5 bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:shadow-[0_0_0_2px_#1e6296] transition-all" placeholder="Qidirish (ID, Ism, Maktab)..." type="text"/></div><div class="hidden xl:flex items-center gap-space-xs px-space-md py-1 bg-surface-container-low rounded-full"><span class="material-symbols-outlined text-[16px] text-secondary">cloud_done</span><span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Google Drive &amp; Sheets sinxronlash: <span class="text-secondary font-semibold">Faol</span></span></div></div><div class="flex items-center gap-space-md"><div class="hidden md:flex flex-col items-end pr-space-sm"><span class="font-label-md text-label-md text-on-surface font-semibold">Dushanba, 24-Mart, 2025</span><span class="font-label-sm text-label-sm text-outline">O'zbekiston Milliy Vaqti (UTC+5)</span></div><button class="relative p-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-error opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-error"></span></span></button><div class="flex items-center gap-space-sm pl-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="hidden lg:flex flex-col"><span class="font-label-md text-label-md text-primary font-semibold leading-tight">A. Qodirov</span><span class="font-label-sm text-label-sm text-outline leading-tight">Bosh Administrator</span></div><a class="p-1.5 rounded-lg text-outline hover:text-error hover:bg-error-container transition-colors" data-path="chiqish" href="#" title="Tizimdan chiqish"><span class="material-symbols-outlined text-[20px]">logout</span></a></div></div></header><main class="relative pt-16 bg-surface flex-1 w-full px-space-xl py-space-lg"><div class="flex flex-col w-full relative">
+<!-- Subtle decorative ambient depth -->
+<div class="absolute -top-10 -right-10 w-96 h-96 bg-secondary-fixed/30 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<div class="absolute top-80 -left-20 w-80 h-80 bg-primary-fixed/20 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<!-- BREADCRUMBS & TOP HEADER -->
+<div class="flex flex-col gap-space-sm mb-space-lg">
+<div class="flex items-center gap-2 font-label-md text-label-md text-on-surface-variant">
+<span class="hover:text-primary transition-colors cursor-pointer">Maktab boshqaruvi</span>
+<span class="material-symbols-outlined text-[14px] text-outline">chevron_right</span>
+<span class="hover:text-primary transition-colors cursor-pointer">244-sonli umumtaʼlim maktabi</span>
+<span class="material-symbols-outlined text-[14px] text-outline">chevron_right</span>
+<span class="font-semibold text-primary">Oʻquvchilar kontingenti va Biometriya</span>
+</div>
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div>
+<h1 class="font-headline-xl text-headline-xl text-primary tracking-tight">Oʻquvchilar Kontingenti va Biometrik Face ID Bazasi</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5">
+          Jami 1,420 nafar oʻquvchi · 42 ta sinf · Google Drive va Face ID Gateway v2.4-rt bilan toʻliq sinxronlangan
+        </p>
+</div>
+<!-- Action buttons -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<button class="px-space-md py-2.5 bg-primary text-on-primary font-label-lg text-label-lg rounded-lg shadow-sm hover:bg-primary-container transition-all flex items-center gap-2" id="btnOpenModal">
+<span class="material-symbols-outlined text-[20px]">person_add</span>
+<span>+ Yangi oʻquvchi qoʻshish</span>
+</button>
+<button class="px-space-md py-2.5 bg-surface-container-lowest text-primary font-label-lg text-label-lg rounded-lg shadow-sm hover:bg-surface-container-high transition-all flex items-center gap-2">
+<span class="w-5 h-5 rounded bg-[#107c41]/10 text-[#107c41] flex items-center justify-center font-bold text-[11px]">X</span>
+<span>Excel orqali ommaviy import</span>
+</button>
+<button class="px-space-md py-2.5 bg-surface-container-high text-on-surface font-label-lg text-label-lg rounded-lg hover:bg-surface-container-highest transition-all flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-secondary">sync</span>
+<span>Modellarni qayta oʻrgatish (128d)</span>
+</button>
+</div>
+</div>
+</div>
+<!-- METRICS SUMMARY BAR (4 CARDS) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-space-md mb-space-lg">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Jami oʻquvchilar</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">groups</span>
+</div>
+</div>
+<div class="mt-2 flex items-baseline gap-2">
+<span class="font-headline-xl text-headline-xl text-primary font-bold">1,420</span>
+<span class="font-label-md text-label-md text-on-surface-variant">nafar</span>
+</div>
+<div class="mt-3 flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm pt-2">
+<span class="flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> 42 ta akademik sinf</span>
+<span class="font-code-sm text-code-sm text-secondary font-medium">1-11 sinflar</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-[#15803d]">Roʻyxatdan oʻtgan (Face ID faol)</span>
+<div class="w-8 h-8 rounded-lg bg-[#f0fdf4] flex items-center justify-center text-[#15803d]">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</div>
+</div>
+<div class="mt-2 flex items-baseline gap-2">
+<span class="font-headline-xl text-headline-xl text-[#15803d] font-bold">1,384</span>
+<span class="font-label-md text-label-md text-on-surface-variant">nafar</span>
+</div>
+<div class="mt-3 flex items-center justify-between font-label-sm text-label-sm pt-2">
+<div class="flex items-center gap-1.5 text-[#15803d]">
+<span class="material-symbols-outlined text-[15px]">trending_up</span>
+<span class="font-semibold">97.5% qamrov</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-[#f0fdf4] text-[#15803d] text-[11px] font-semibold">Gatewayga yuklangan</span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-[#b45309]">Rasm yuklanmagan / Kutilmoqda</span>
+<div class="w-8 h-8 rounded-lg bg-[#fffbeb] flex items-center justify-center text-[#b45309]">
+<span class="material-symbols-outlined text-[18px]">add_a_photo</span>
+</div>
+</div>
+<div class="mt-2 flex items-baseline gap-2">
+<span class="font-headline-xl text-headline-xl text-[#b45309] font-bold">24</span>
+<span class="font-label-md text-label-md text-on-surface-variant">nafar</span>
+</div>
+<div class="mt-3 flex items-center justify-between font-label-sm text-label-sm pt-2">
+<span class="text-[#b45309] font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">warning</span> Rasm biriktirish zarur
+        </span>
+<span class="font-code-sm text-code-sm text-outline font-semibold">1.7% kontingent</span>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-error">Sifatsiz Biometrik Rasm</span>
+<div class="w-8 h-8 rounded-lg bg-error-container flex items-center justify-center text-error">
+<span class="material-symbols-outlined text-[18px]">error</span>
+</div>
+</div>
+<div class="mt-2 flex items-baseline gap-2">
+<span class="font-headline-xl text-headline-xl text-error font-bold">12</span>
+<span class="font-label-md text-label-md text-on-surface-variant">nafar</span>
+</div>
+<div class="mt-3 flex items-center justify-between font-label-sm text-label-sm pt-2">
+<span class="text-error font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">replay</span> Qayta suratga olish kerak
+        </span>
+<span class="px-2 py-0.5 rounded-full bg-error-container text-error text-[11px] font-semibold">Xira / burilgan</span>
+</div>
+</div>
+</div>
+<!-- ADVANCED FILTER & SEARCH PANEL -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm mb-space-md flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex flex-wrap items-center gap-space-sm flex-1">
+<div class="relative flex-1 min-w-[260px] max-w-md">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-[18px] text-outline">search</span>
+<input class="w-full pl-9 pr-4 py-2 bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary transition-all" placeholder="F.I.SH. yoki Oʻquvchi ID raqami boʻyicha izlash..." type="text"/>
+</div>
+<!-- Sinf tanlash -->
+<div class="relative">
+<select class="appearance-none pl-3.5 pr-8 py-2 bg-surface-container-low rounded-lg font-label-md text-label-md text-on-surface focus:outline-none focus:ring-2 focus:ring-secondary cursor-pointer">
+<option>Barcha sinflar (42 ta)</option>
+<option selected="">10-A sinf (34 oʻquvchi)</option>
+<option>10-B sinf (32 oʻquvchi)</option>
+<option>11-A sinf (30 oʻquvchi)</option>
+<option>9-V sinf (35 oʻquvchi)</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-[18px] text-outline pointer-events-none">expand_more</span>
+</div>
+<!-- Holat -->
+<div class="relative">
+<select class="appearance-none pl-3.5 pr-8 py-2 bg-surface-container-low rounded-lg font-label-md text-label-md text-on-surface focus:outline-none focus:ring-2 focus:ring-secondary cursor-pointer">
+<option>Faol taʼlim oluvchilar</option>
+<option>Barcha maqomlar</option>
+<option>Koʻchirilgan / Chiqib ketgan</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-[18px] text-outline pointer-events-none">expand_more</span>
+</div>
+<!-- Face ID holati -->
+<div class="relative">
+<select class="appearance-none pl-3.5 pr-8 py-2 bg-surface-container-low rounded-lg font-label-md text-label-md text-on-surface focus:outline-none focus:ring-2 focus:ring-secondary cursor-pointer">
+<option>Biometriya: Barchasi</option>
+<option>🟢 Roʻyxatdan oʻtgan</option>
+<option>🟡 Rasm kerak</option>
+<option>🔴 Sifatsiz rasm</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-[18px] text-outline pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- Sync status & Quick actions -->
+<div class="flex items-center gap-space-sm self-end lg:self-center">
+<div class="flex items-center gap-1.5 px-3 py-1.5 bg-surface-container-low rounded-lg text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] animate-pulse">cloud_sync</span>
+<span>Google Drive: 1,420/1,420 fayl</span>
+</div>
+<button class="p-2 bg-surface-container-low hover:bg-surface-container-high rounded-lg text-on-surface-variant transition-colors" title="Eksport qilish">
+<span class="material-symbols-outlined text-[20px]">file_download</span>
+</button>
+<button class="p-2 bg-surface-container-low hover:bg-surface-container-high rounded-lg text-on-surface-variant transition-colors" title="Filtrlarni tozalash">
+<span class="material-symbols-outlined text-[20px]">filter_alt_off</span>
+</button>
+</div>
+</div>
+<!-- STUDENTS DATA TABLE -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden mb-space-xl">
+<div class="overflow-x-auto">
+<table class="w-full text-left text-on-surface border-collapse">
+<thead>
+<tr class="bg-surface-container-low font-label-sm text-label-sm text-primary uppercase tracking-wider select-none">
+<th class="py-3 px-space-md w-12 text-center">
+<input class="rounded accent-primary cursor-pointer" type="checkbox"/>
+</th>
+<th class="py-3 px-space-sm w-16">Surat</th>
+<th class="py-3 px-space-md">Oʻquvchi F.I.SH.</th>
+<th class="py-3 px-space-md">Oʻquvchi ID</th>
+<th class="py-3 px-space-md">Sinf</th>
+<th class="py-3 px-space-md">Face ID Holati</th>
+<th class="py-3 px-space-md">Google Drive</th>
+<th class="py-3 px-space-md text-right">Amallar</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-high font-body-sm text-body-sm">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-low/70 transition-colors">
+<td class="py-2.5 px-space-md text-center">
+<input class="rounded accent-primary cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-2.5 px-space-sm">
+<div class="w-10 h-10 rounded-full bg-surface-container-high overflow-hidden shadow-inner flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="Close-up biometric identification passport style photograph of a teenage boy in Uzbekistan school uniform against a clean plain light grey background, sharp focus, neutral natural expression." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDoJqPllzL7-4AgcSprcNU66kT5D2HPD7SoifuaVKz6wMIjXYtldRYSgSadtsLuj2JuDn4LdTK-J3Ox8aNvUttXpfKGrxYSxLt0rQwn6lSu_7NpeOsSQ01He8qTtX2nGLHtnCCBMOD3Daq6wAoOY_KTuqbz1bfmr7jSrLkXYDjVSZ8F9fFd8zlT4hIOHjs58EaraATMrnr6RpQhPmgTJl4FAsBMNoBnEENuYyC652pw03Sy8PGkLdN-MQ"/>
+</div>
+</td>
+<td class="py-2.5 px-space-md">
+<div class="font-label-lg text-label-lg text-primary font-semibold">Akromov Jasur Azamat oʻgʻli</div>
+<div class="font-label-sm text-label-sm text-outline">Tugʻilgan: 14-Aprel, 2008-yil</div>
+</td>
+<td class="py-2.5 px-space-md">
+<span class="font-code-sm text-code-sm font-semibold text-secondary px-2 py-0.5 bg-secondary-fixed rounded">UZ244-9845</span>
+</td>
+<td class="py-2.5 px-space-md">
+<span class="font-label-md text-label-md font-medium text-on-surface">10-A sinf</span>
+</td>
+<td class="py-2.5 px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[#f0fdf4] text-[#15803d] font-label-sm text-label-sm font-medium">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+<span>Roʻyxatdan oʻtgan (128d)</span>
+</span>
+</td>
+<td class="py-2.5 px-space-md">
+<a class="inline-flex items-center gap-1 text-secondary hover:underline font-label-sm text-label-sm" href="#">
+<span class="material-symbols-outlined text-[16px]">folder_shared</span>
+<span>244_UZ9845.jpg</span>
+</a>
+</td>
+<td class="py-2.5 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded hover:bg-surface-container-high text-on-surface-variant" title="Biometriyani koʻrish"><span class="material-symbols-outlined text-[18px]">face</span></button>
+<button class="p-1.5 rounded hover:bg-surface-container-high text-on-surface-variant" title="Tahrirlash"><span class="material-symbols-outlined text-[18px]">edit</span></button>
+<button class="p-1.5 rounded hover:bg-error-container text-error" title="Oʻchirish"><span class="material-symbols-outlined text-[18px]">delete</span></button>
+</div>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-low/70 transition-colors">
+<td class="py-2.5 px-space-md text-center">
+<input class="rounded accent-primary cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-2.5 px-space-sm">
+<div class="w-10 h-10 rounded-full bg-surface-container-high overflow-hidden shadow-inner flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="Headshot of a smiling Central Asian female student in high school attire with neat dark hair tied back, well-lit studio lighting with crisp white background suitable for face recognition database." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPEctGXcJ-kDP6HPOSYozri2wplGZmNHUQXgaHZBnMVKZRVeYlPP_RZzVOs52aOswZN50WQvDoXwWgrZUi0liSbp8QaJGxnLwLLcYNYoOdR5MFeOt2XJNzlyiU0bp2QLrf_2uVNlFodoPknsZwhLKtSdtlKLe2kyiopZS7TLYIEQNdM27K70kbov7AlgRlqVhsqXU7Y5Nt5d3l8TKvGOV4ixh1P6Z9NkJogFygF1YzSED_jD7lOnwpQw"/>
+</div>
+</td>
+<td class="py-2.5 px-space-md">
+<div class="font-label-lg text-label-lg text-primary font-semibold">Saidova Madina Rustam qizi</div>
+<div class="font-label-sm text-label-sm text-outline">Tugʻilgan: 02-Noyabr, 2008-yil</div>
+</td>
+<td class="py-2.5 px-space-md">
+<span class="font-code-sm text-code-sm font-semibold text-secondary px-2 py-0.5 bg-secondary-fixed rounded">UZ244-9844</span>
+</td>
+<td class="py-2.5 px-space-md">
+<span class="font-label-md text-label-md font-medium text-on-surface">10-A sinf</span>
+</td>
+<td class="py-2.5 px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[#f0fdf4] text-[#15803d] font-label-sm text-label-sm font-medium">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+<span>Roʻyxatdan oʻtgan (128d)</span>
+</span>
+</td>
+<td class="py-2.5 px-space-md">
+<a class="inline-flex items-center gap-1 text-secondary hover:underline font-label-sm text-label-sm" href="#">
+<span class="material-symbols-outlined text-[16px]">folder_shared</span>
+<span>244_UZ9844.jpg</span>
+</a>
+</td>
+<td class="py-2.5 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded hover:bg-surface-container-high text-on-surface-variant" title="Biometriyani koʻrish"><span class="material-symbols-outlined text-[18px]">face</span></button>
+<button class="p-1.5 rounded hover:bg-surface-container-high text-on-surface-variant" title="Tahrirlash"><span class="material-symbols-outlined text-[18px]">edit</span></button>
+<button class="p-1.5 rounded hover:bg-error-container text-error" title="Oʻchirish"><span class="material-symbols-outlined text-[18px]">delete</span></button>
+</div>
+</td>
+</tr>
+<!-- Row 3: Rasm kerak -->
+<tr class="hover:bg-surface-container-low/70 transition-colors">
+<td class="py-2.5 px-space-md text-center">
+<input class="rounded accent-primary cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-2.5 px-space-sm">
+<div class="w-10 h-10 rounded-full bg-[#fffbeb] text-[#b45309] flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-[20px]">no_photography</span>
+</div>
+</td>
+<td class="py-2.5 px-space-md">
+<div class="font-label-lg text-label-lg text-primary font-semibold">Karimov Sardor Ulugʻbek oʻgʻli</div>
+<div class="font-label-sm text-label-sm text-outline">Tugʻilgan: 19-Iyul, 2008-yil</div>
+</td>
+<td class="py-2.5 px-space-md">
+<span class="font-code-sm text-code-sm font-semibold text-secondary px-2 py-0.5 bg-secondary-fixed rounded">UZ244-9843</span>
+</td>
+<td class="py-2.5 px-space-md">
+<span class="font-label-md text-label-md font-medium text-on-surface">10-A sinf</span>
+</td>
+<td class="py-2.5 px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[#fffbeb] text-[#b45309] font-label-sm text-label-sm font-medium">
+<span class="material-symbols-outlined text-[14px]">photo_camera</span>
+<span>Rasm yuklanmagan</span>
+</span>
+</td>
+<td class="py-2.5 px-space-md">
+<span class="font-label-sm text-label-sm text-outline italic">Mavjud emas</span>
+</td>
+<td class="py-2.5 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="px-2 py-1 rounded bg-secondary-fixed text-primary font-label-sm text-label-sm font-semibold hover:bg-secondary-container transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">add_a_photo</span>
+<span>Surat olish</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4: Sifatsiz rasm -->
+<tr class="hover:bg-surface-container-low/70 transition-colors">
+<td class="py-2.5 px-space-md text-center">
+<input class="rounded accent-primary cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-2.5 px-space-sm">
+<div class="w-10 h-10 rounded-full bg-error-container text-error flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-[20px]">broken_image</span>
+</div>
+</td>
+<td class="py-2.5 px-space-md">
+<div class="font-label-lg text-label-lg text-primary font-semibold">Tursunova Nilufar Olim qizi</div>
+<div class="font-label-sm text-label-sm text-outline">Tugʻilgan: 30-Yanvar, 2008-yil</div>
+</td>
+<td class="py-2.5 px-space-md">
+<span class="font-code-sm text-code-sm font-semibold text-secondary px-2 py-0.5 bg-secondary-fixed rounded">UZ244-9842</span>
+</td>
+<td class="py-2.5 px-space-md">
+<span class="font-label-md text-label-md font-medium text-on-surface">10-A sinf</span>
+</td>
+<td class="py-2.5 px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-error-container text-error font-label-sm text-label-sm font-medium">
+<span class="material-symbols-outlined text-[14px]">blur_on</span>
+<span>Sifatsiz rasm (Xira)</span>
+</span>
+</td>
+<td class="py-2.5 px-space-md">
+<span class="font-label-sm text-label-sm text-error">Qayta yuklash zarur</span>
+</td>
+<td class="py-2.5 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="px-2 py-1 rounded bg-error text-on-error font-label-sm text-label-sm font-semibold hover:bg-error/90 transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">replay</span>
+<span>Qayta olish</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Pagination Footer -->
+<div class="px-space-md py-3 bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-space-sm font-label-sm text-label-sm text-on-surface-variant">
+<span>1,420 tadan 1-4 koʻrsatilmoqda · 10-A sinf filtri faol</span>
+<div class="flex items-center gap-1">
+<button class="px-2.5 py-1 rounded bg-surface-container-lowest text-outline hover:text-on-surface disabled:opacity-50" disabled="">Oldingi</button>
+<button class="px-3 py-1 rounded bg-primary text-on-primary font-semibold">1</button>
+<button class="px-3 py-1 rounded bg-surface-container-lowest hover:bg-surface-container-high text-on-surface">2</button>
+<button class="px-3 py-1 rounded bg-surface-container-lowest hover:bg-surface-container-high text-on-surface">3</button>
+<span>...</span>
+<button class="px-3 py-1 rounded bg-surface-container-lowest hover:bg-surface-container-high text-on-surface">36</button>
+<button class="px-2.5 py-1 rounded bg-surface-container-lowest hover:bg-surface-container-high text-on-surface">Keyingi</button>
+</div>
+</div>
+</div>
+<!-- ========================================================================= -->
+<!-- ★ MAIN FOCUS: "YANGI OʻQUVCHI QOʻSHISH" OPEN MODAL DIALOG OVERLAY          -->
+<!-- ========================================================================= -->
+<div class="fixed inset-0 z-50 bg-[#0f172a]/60 backdrop-blur-sm flex items-center justify-center p-4 overflow-y-auto" id="studentModalOverlay">
+<div class="relative w-full max-w-[760px] bg-surface-container-lowest rounded-xl shadow-[0_25px_50px_-12px_rgba(22,50,92,0.25)] my-8 overflow-hidden flex flex-col">
+<!-- MODAL HEADER -->
+<div class="px-space-xl py-space-md bg-surface-container-low flex items-start justify-between">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-primary text-on-primary flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-[26px]">person_add</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">Yangi oʻquvchi qoʻshish va Face ID biometriyasi</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+              244-sonli umumtaʼlim maktabi bazasiga yangi oʻquvchi va uning 128-oʻlchamli yuz deskriptorini kiritish
+            </p>
+</div>
+</div>
+<button class="p-1.5 rounded-lg text-outline hover:text-on-surface hover:bg-surface-container-high transition-colors" id="btnCloseModal" title="Yopish">
+<span class="material-symbols-outlined text-[22px]">close</span>
+</button>
+</div>
+<!-- MODAL BODY (SCROLLABLE CONTENT) -->
+<div class="p-space-xl space-y-space-lg max-h-[calc(88vh-130px)] overflow-y-auto">
+<!-- 1. ASOSIY SHAXSIY MAʼLUMOTLAR -->
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<h3 class="font-headline-sm text-headline-sm text-primary flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-primary-fixed text-primary flex items-center justify-center text-xs font-bold">1</span>
+<span>Shaxsiy Maʼlumotlar</span>
+</h3>
+<div class="flex items-center gap-1.5 px-2.5 py-1 bg-secondary-fixed text-primary rounded-lg font-code-sm text-code-sm">
+<span class="material-symbols-outlined text-[15px] text-secondary">fingerprint</span>
+<span>Tizim ID: <strong class="text-secondary font-bold">UZ244-9845</strong></span>
+<span class="material-symbols-outlined text-[14px] text-secondary" title="Avtomat generatsiya qilingan">lock</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm">
+<!-- Ism -->
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface mb-1">Ism <span class="text-error">*</span></label>
+<input class="w-full px-3 py-2 bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-secondary font-medium" type="text" value="Jasur"/>
+</div>
+<!-- Familiya -->
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface mb-1">Familiya <span class="text-error">*</span></label>
+<input class="w-full px-3 py-2 bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-secondary font-medium" type="text" value="Akromov"/>
+</div>
+<!-- Otasining ismi -->
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface mb-1">Otasining ismi</label>
+<input class="w-full px-3 py-2 bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-secondary font-medium" type="text" value="Azamat oʻgʻli"/>
+</div>
+<!-- Sinf -->
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface mb-1">Sinf <span class="text-error">*</span></label>
+<div class="relative">
+<select class="w-full appearance-none px-3 py-2 bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-secondary font-medium cursor-pointer">
+<option selected="">10-A sinf</option>
+<option>10-B sinf</option>
+<option>11-A sinf</option>
+<option>9-V sinf</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-[18px] text-outline pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- Tugʻilgan sana -->
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface mb-1">Tugʻilgan sana <span class="text-error">*</span></label>
+<input class="w-full px-3 py-2 bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-secondary font-medium cursor-pointer" type="date" value="2008-04-14"/>
+</div>
+<!-- Jinsi -->
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface mb-1">Jinsi</label>
+<div class="grid grid-cols-2 gap-2 pt-0.5">
+<label class="flex items-center justify-center gap-1.5 py-1.5 px-2 bg-primary text-on-primary rounded-lg font-label-md text-label-md cursor-pointer font-semibold shadow-xs">
+<input checked="" class="hidden" name="gender" type="radio"/>
+<span>Oʻgʻil</span>
+</label>
+<label class="flex items-center justify-center gap-1.5 py-1.5 px-2 bg-surface-container-low hover:bg-surface-container-high text-on-surface rounded-lg font-label-md text-label-md cursor-pointer transition-colors">
+<input class="hidden" name="gender" type="radio"/>
+<span>Qiz</span>
+</label>
+</div>
+</div>
+</div>
+</div>
+<!-- 2. FACE ID BIOMETRIK FOTOSURAT BLOKI -->
+<div class="bg-surface-container-low rounded-xl p-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-space-sm">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-primary-fixed text-primary flex items-center justify-center text-xs font-bold">2</span>
+<span>Biometrik Yuz Identifikatsiyasi (Turniket va Kiosk uchun)</span>
+</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Tizim 128-oʻlchamli neyrotarmoq embedding matritsasini avtomatik hisoblaydi</p>
+</div>
+<!-- Segmented Tabs -->
+<div class="inline-flex p-1 bg-surface-container-highest rounded-lg self-start sm:self-auto">
+<button class="px-3 py-1.5 bg-primary text-on-primary rounded-lg font-label-sm text-label-sm font-semibold flex items-center gap-1.5 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">videocam</span>
+<span>Jonli kamera</span>
+</button>
+<button class="px-3 py-1.5 text-on-surface-variant hover:text-on-surface rounded-lg font-label-sm text-label-sm font-medium flex items-center gap-1.5 transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">file_upload</span>
+<span>Rasm yuklash</span>
+</button>
+</div>
+</div>
+<!-- JONLI KAMERA INTERFACE PREVIEW (DARK TERMINAL VIEW) -->
+<div class="relative w-full h-80 bg-[#071322] rounded-xl overflow-hidden shadow-inner flex flex-col justify-between p-3 select-none">
+<!-- Simulated video background using rich prompt placeholder -->
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover opacity-85 brightness-95" data-alt="Real-time video feed screenshot from high quality HD webcam capturing a smart young Central Asian male student looking straight ahead, natural lighting, sharp biometrics facial details, studio dark surveillance setting overlay." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCNgsTj1TZlpzU6dz7s1v1UfU8mE1DI1WGlklXZvpOD9UvsxRf3u-NZtSg_yU1NMxfZJHVRAvZJ60YeFq70H79PYfBgPyIfnw1kfskqZkgDI4x9U09zACJXCIN2Gssp7XePr9XpLPTS5wBjEbhDQsWHNUxgATVqbmi0jHFi2rMudIE0uXOjZASP86G3MyMWQpuK4pgmN-kJ_Qor5kH9hETjWunWTaSQpSzMQuaXSpAl_Lf75rgShmWlg"/>
+</div>
+<!-- Dark gradient overlay for text readability -->
+<div class="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-black/80 z-0 pointer-events-none"></div>
+<!-- Top Camera Status Bar -->
+<div class="relative z-10 flex items-center justify-between">
+<div class="flex items-center gap-2 bg-black/60 backdrop-blur-md px-3 py-1 rounded-full text-white font-code-sm text-code-sm">
+<span class="w-2.5 h-2.5 rounded-full bg-[#10b981] animate-ping"></span>
+<span>HD WEBCAM 1080p · 30 FPS</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-1 bg-[#10b981]/20 text-[#34d399] font-code-sm text-code-sm rounded-full backdrop-blur-md font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">psychology</span>
+<span>FaceNet-128: Qamrov 99.4%</span>
+</span>
+</div>
+</div>
+<!-- Center Biometric Face-Frame Guide Bounding Box -->
+<div class="relative z-10 flex flex-col items-center justify-center my-auto pointer-events-none">
+<!-- Bounding Oval with dynamic corners -->
+<div class="relative w-44 h-56 rounded-[50px] border-2 border-dashed border-[#38bdf8]/80 flex items-center justify-center shadow-[0_0_20px_rgba(56,189,248,0.3)]">
+<!-- Precision crosshair corners -->
+<div class="absolute -top-1 -left-1 w-4 h-4 border-t-2 border-l-2 border-[#38bdf8]"></div>
+<div class="absolute -top-1 -right-1 w-4 h-4 border-t-2 border-r-2 border-[#38bdf8]"></div>
+<div class="absolute -bottom-1 -left-1 w-4 h-4 border-b-2 border-l-2 border-[#38bdf8]"></div>
+<div class="absolute -bottom-1 -right-1 w-4 h-4 border-b-2 border-r-2 border-[#38bdf8]"></div>
+<!-- Horizontal scanline animation effect -->
+<div class="w-full h-0.5 bg-[#38bdf8] shadow-[0_0_8px_#38bdf8] opacity-70 animate-pulse"></div>
+<span class="absolute bottom-2 text-white/80 font-code-sm text-[10px] tracking-widest uppercase bg-black/50 px-2 py-0.5 rounded">
+                  Fokus Markazi
+                </span>
+</div>
+</div>
+<!-- Bottom Camera Controls & Quality Badges -->
+<div class="relative z-10 flex flex-col gap-2">
+<!-- Real-time Quality hints -->
+<div class="flex flex-wrap items-center justify-center gap-2">
+<span class="px-2 py-0.5 rounded bg-black/70 backdrop-blur-md text-[#34d399] font-label-sm text-[11px] font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">check_circle</span> Yuz markazda
+                </span>
+<span class="px-2 py-0.5 rounded bg-black/70 backdrop-blur-md text-[#34d399] font-label-sm text-[11px] font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">wb_sunny</span> Yorugʻlik yetarli
+                </span>
+<span class="px-2 py-0.5 rounded bg-black/70 backdrop-blur-md text-[#34d399] font-label-sm text-[11px] font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">visibility</span> Koʻzlar ochiq
+                </span>
+</div>
+<!-- Action Bar inside camera -->
+<div class="flex items-center justify-between pt-1">
+<button class="px-3 py-1.5 bg-white/10 hover:bg-white/20 text-white font-label-sm text-label-sm rounded-lg backdrop-blur-md transition-colors flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[16px]">switch_camera</span>
+<span>Kamerani almashtirish</span>
+</button>
+<!-- Center Capture Button -->
+<button class="px-5 py-2 bg-secondary text-white font-label-lg text-label-lg rounded-xl shadow-lg hover:bg-secondary/90 transition-all flex items-center gap-2 transform active:scale-95" type="button">
+<span class="material-symbols-outlined text-[20px]">photo_camera</span>
+<span class="font-bold">Suratga olish (Kadrni qotirish)</span>
+</button>
+<button class="px-3 py-1.5 bg-white/10 hover:bg-white/20 text-white font-label-sm text-label-sm rounded-lg backdrop-blur-md transition-colors flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[16px]">refresh</span>
+<span>Qayta boshlash</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Bottom hint note -->
+<div class="mt-space-sm flex items-center gap-2 font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-secondary">info</span>
+<span>Talab: Neytral yuz ifodasi, boshni 15 darajadan koʻp burmaslik, orqa fon tekis boʻlishi tavsiya etiladi.</span>
+</div>
+</div>
+<!-- 3. OTA-ONA / VASIY MAʼLUMOTLARI -->
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary flex items-center gap-2 mb-space-sm">
+<span class="w-6 h-6 rounded-full bg-primary-fixed text-primary flex items-center justify-center text-xs font-bold">3</span>
+<span>Ota-ona / Vasiy Maʼlumotlari (SMS Xabarnoma Uchun)</span>
+</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-sm">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface mb-1">Ota-onasi (vasiy) F.I.SH. <span class="text-error">*</span></label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-[18px] text-outline">family_restroom</span>
+<input class="w-full pl-9 pr-3 py-2 bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-secondary font-medium" type="text" value="Akromov Azamat Karimovich"/>
+</div>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface mb-1">Mobil telefon raqami (Turniket SMS uchun) <span class="text-error">*</span></label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-[18px] text-outline">phone</span>
+<input class="w-full pl-9 pr-3 py-2 bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-secondary font-medium font-code-sm" type="tel" value="+998 90 123-45-67"/>
+</div>
+</div>
+</div>
+</div>
+<!-- 4. MAJBURİY ROZILIK CHECKBOXI (Yuridik va Axborot Xavfsizligi standarti) -->
+<div class="p-space-md bg-secondary-fixed/20 rounded-xl flex items-start gap-space-sm">
+<input checked="" class="mt-1 w-4 h-4 rounded text-primary accent-primary cursor-pointer" id="legalConsent" type="checkbox"/>
+<label class="font-body-sm text-body-sm text-on-surface cursor-pointer select-none leading-relaxed" for="legalConsent">
+<strong class="font-semibold text-primary">Yuridik va xavfsizlik roziligi:</strong> Ota-ona yoki qonuniy vasiyning biometrik maʼlumotlarni (yuz tasviri va 128-oʻlchamli neyrotarmoq embeddinglarini) yigʻish, qayta ishlash hamda davomat nazorati maqsadida saqlashga <span class="underline font-semibold text-secondary">yozma roziligi olindi</span>. Ushbu operatsiya Oʻzbekiston Respublikasi “Shaxsga doir maʼlumotlar toʻgʻrisida”gi Qonuniga muvofiq qayd etiladi.
+          </label>
+</div>
+</div>
+<!-- MODAL FOOTER -->
+<div class="px-space-xl py-space-md bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<!-- Google drive automatic notification indicator -->
+<div class="flex items-center gap-2 font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px] text-[#1e6296]">add_to_drive</span>
+<span>Google Drive: <code class="font-code-sm text-primary font-semibold">244-Maktab_Oquvchilar/</code> papkasiga avtomatik sinxronlanadi</span>
+</div>
+<!-- Actions -->
+<div class="flex items-center gap-space-sm w-full sm:w-auto justify-end">
+<button class="px-space-md py-2.5 bg-surface-container-lowest text-primary font-label-lg text-label-lg rounded-lg hover:bg-surface-container-high transition-colors" id="btnCancelModal" type="button">
+            Bekor qilish
+          </button>
+<button class="px-space-lg py-2.5 bg-primary text-on-primary font-label-lg text-label-lg rounded-lg shadow-sm hover:bg-primary-container transition-all flex items-center gap-2" id="btnSaveStudent" type="button">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+<span>Saqlash va Face ID bazasiga qoʻshish</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Simple vanilla toggle logic for modal responsiveness
+  const modalOverlay = document.getElementById('studentModalOverlay');
+  const btnOpenModal = document.getElementById('btnOpenModal');
+  const btnCloseModal = document.getElementById('btnCloseModal');
+  const btnCancelModal = document.getElementById('btnCancelModal');
+  const btnSaveStudent = document.getElementById('btnSaveStudent');
+
+  function closeModal() {
+    if (modalOverlay) {
+      modalOverlay.classList.add('hidden');
+    }
+  }
+
+  function openModal() {
+    if (modalOverlay) {
+      modalOverlay.classList.remove('hidden');
+    }
+  }
+
+  if (btnCloseModal) btnCloseModal.addEventListener('click', closeModal);
+  if (btnCancelModal) btnCancelModal.addEventListener('click', closeModal);
+  if (btnOpenModal) btnOpenModal.addEventListener('click', openModal);
+
+  if (btnSaveStudent) {
+    btnSaveStudent.addEventListener('click', function() {
+      const originalText = this.innerHTML;
+      this.innerHTML = '<span class="material-symbols-outlined animate-spin text-[18px]">progress_activity</span><span>Sinxronlanmoqda...</span>';
+      this.disabled = true;
+      setTimeout(() => {
+        alert("Oʻquvchi muvaffaqiyatli saqlandi va Face ID Gateway v2.4 bazasiga yuborildi!");
+        this.innerHTML = originalText;
+        this.disabled = false;
+        closeModal();
+      }, 1000);
+    });
+  }
+</script></main></div></body></html>

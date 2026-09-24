@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+
+<html lang="uz"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"on-primary-container":"#88a5d4","primary-container":"#1b3a63","surface":"#f8f9ff","on-error":"#ffffff","on-primary-fixed-variant":"#2a4771","outline":"#74777f","tertiary":"#371e00","on-background":"#0d1c2e","surface-container":"#e6eeff","on-tertiary-fixed-variant":"#683d00","surface-container-highest":"#d5e3fc","on-tertiary":"#ffffff","tertiary-container":"#553100","primary-fixed":"#d5e3ff","on-surface-variant":"#43474e","primary":"#00244b","surface-tint":"#435f8a","secondary":"#1e6296","tertiary-fixed":"#ffdcbc","inverse-on-surface":"#eaf1ff","tertiary-fixed-dim":"#ffb86a","surface-dim":"#ccdbf3","on-secondary-fixed":"#001d33","surface-variant":"#d5e3fc","on-primary":"#ffffff","on-secondary-container":"#005284","surface-bright":"#f8f9ff","inverse-surface":"#233144","on-error-container":"#93000a","secondary-fixed":"#cfe5ff","on-surface":"#0d1c2e","secondary-fixed-dim":"#98cbff","error-container":"#ffdad6","on-secondary-fixed-variant":"#004a77","error":"#ba1a1a","primary-fixed-dim":"#abc8f9","on-secondary":"#ffffff","background":"#f8f9ff","outline-variant":"#c4c6d0","surface-container-high":"#dce9ff","inverse-primary":"#abc8f9","secondary-container":"#8cc6ff","on-tertiary-container":"#e09231","surface-container-lowest":"#ffffff","surface-container-low":"#eff4ff","on-tertiary-fixed":"#2c1700","on-primary-fixed":"#001b3c"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-xl":"1.75rem","margin":"1.75rem","space-lg":"1.25rem","space-sm":"0.5rem","gutter":"1.25rem","space-md":"0.875rem","space-xs":"0.25rem"},"fontFamily":{"headline-lg":["Plus Jakarta Sans"],"label-sm":["Inter"],"label-md":["Inter"],"body-lg":["Inter"],"headline-sm":["Plus Jakarta Sans"],"headline-xl":["Plus Jakarta Sans"],"label-lg":["Inter"],"code-sm":["JetBrains Mono"],"body-sm":["Inter"],"body-md":["Inter"],"headline-md":["Plus Jakarta Sans"]},"fontSize":{"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"600"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.03em","fontWeight":"600"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-sm":["16px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"600"}],"headline-xl":["30px",{"lineHeight":"38px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"code-sm":["12px",{"lineHeight":"16px","fontWeight":"500"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-md":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-[260px] bg-surface-container-low shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between"><div class="flex flex-col"><div class="h-16 px-space-md flex items-center gap-space-sm bg-surface-container-low"><img alt="Brand logo. - Primary color: #1b3a63
+- Font: plusJakartaSans
+- Mode: light
+- Roundness: rounded-sm
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XKpgFUA_ZLL6laM_UqoO_vU2M-QQF7DWOY8FD-MVppK1kG6wPo8W8rQ4X49I5b-QBa7yZQ-OOAKrKDbVCjevhkxCPaJMdfs1p6G6G-6sItcqVVfeLHn50-s0eIjD85G15WFlsg2HdqWxn0-4LIXtWVwW7lhWuK_aj5lbXlx12gr0dGuXyEgOh8_x1lzlSxSFwhd1FQXMaq14Plr6vYua8mpazYQL8papQQNjAOTTSf0e6DnnIA4xEigEw"/><div class="flex flex-col min-w-0"><span class="font-headline-sm text-headline-sm text-primary leading-tight truncate">Yagona Taʼlim</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider truncate">Davomat &amp; Nazorat</span></div></div><div class="px-space-md pt-space-md pb-space-sm"><div class="p-space-sm rounded-lg bg-surface-container-high"><div class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">Amaldagi rol</div><div class="font-label-md text-label-md text-on-surface truncate mt-space-xs font-semibold">Tizim Bosh Nazorati / Respublika</div></div></div><nav class="px-space-sm py-space-xs space-y-1" data-active-classes="bg-primary-container text-on-primary font-semibold shadow-[0_1px_3px_0_rgba(22,50,92,0.06)] rounded-lg"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-label-md text-label-md" data-path="bosh-sahifa" href="#"><span class="material-symbols-outlined text-[18px]">dashboard</span><span class="truncate">Bosh sahifa</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-label-md text-label-md" data-path="viloyatlar" href="#"><span class="material-symbols-outlined text-[18px]">map</span><span class="truncate">Viloyatlar</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-label-md text-label-md" data-path="tumanlar" href="#"><span class="material-symbols-outlined text-[18px]">holiday_village</span><span class="truncate">Tumanlar</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-label-md text-label-md" data-path="maktablar" href="#"><span class="material-symbols-outlined text-[18px]">school</span><span class="truncate">Maktablar</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-label-md text-label-md" data-path="davomat" href="#"><span class="material-symbols-outlined text-[18px]">fact_check</span><span class="truncate">Davomat</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-label-md text-label-md" data-path="xodimlar" href="#"><span class="material-symbols-outlined text-[18px]">badge</span><span class="truncate">Xodimlar</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-label-md text-label-md" data-path="statistika-va-hisobotlar" href="#"><span class="material-symbols-outlined text-[18px]">analytics</span><span class="truncate">Statistika va Hisobotlar</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-space-sm transition-colors bg-primary-container text-on-primary font-semibold shadow-[0_1px_3px_0_rgba(22,50,92,0.06)] rounded-lg" data-path="sozlamalar" href="#"><span class="material-symbols-outlined text-[18px]">settings</span><span class="truncate">Sozlamalar</span></a></nav></div><div class="p-space-md m-space-sm rounded-lg bg-surface-container"><div class="flex items-center justify-between mb-space-xs"><span class="font-label-sm text-label-sm font-semibold text-primary">Face ID Gateway v2.4-rt</span><span class="inline-block w-2 h-2 rounded-full bg-secondary"></span></div><div class="flex items-center gap-space-xs font-code-sm text-code-sm text-on-surface-variant"><span class="inline-block w-1.5 h-1.5 rounded-full bg-[#15803d]"></span><span>Gateway Faol</span><span>·</span><span>12ms</span><span>·</span><span>TLS 1.3</span></div></div></aside><div class="pl-[260px]"><header class="fixed top-0 left-[260px] right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-margin"><div class="flex items-center gap-space-lg min-w-0"><div class="flex items-center gap-space-xs font-label-md text-label-md min-w-0"><span class="text-on-surface-variant truncate">Tizim sozlamalari</span><span class="text-outline text-label-sm">/</span><span class="text-on-surface font-semibold truncate">Huquqlar va API kalitlar</span></div><div class="hidden xl:flex items-center gap-space-xs px-space-sm py-1 bg-surface-container-high rounded-full font-label-sm text-label-sm text-secondary-container"><span class="material-symbols-outlined text-secondary text-[16px]">cloud_sync</span><span class="text-on-surface font-medium">Google Drive &amp; Sheets sinxronlash: Faol</span></div></div><div class="flex items-center gap-space-md"><div class="hidden md:flex flex-col text-right font-code-sm text-code-sm text-on-surface-variant"><span class="font-medium text-on-surface">Dushanba, 24-Mart, 2025</span><span class="text-label-sm text-outline">Oʻzbekiston Milliy Vaqti (UTC+5)</span></div><div class="relative flex items-center justify-center"><button class="p-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span></button><span class="absolute top-1 right-1 w-2 h-2 rounded-full bg-error"></span></div><div class="flex items-center gap-space-sm pl-space-sm"><div class="hidden lg:flex flex-col text-right"><span class="font-label-md text-label-md text-on-surface font-semibold leading-tight">A. Qodirov</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Bosh Administrator / Respublika</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><button class="p-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-error transition-colors" title="Tizimdan chiqish" type="button"><span class="material-symbols-outlined text-[20px]">logout</span></button></div></div></header><main class="relative pt-16 bg-surface min-h-screen w-full px-margin py-margin"><div class="flex flex-col w-full pb-16 space-y-space-xl">
+<!-- Top Page Header -->
+<div class="relative overflow-hidden bg-surface-container-lowest p-space-xl rounded-xl shadow-sm">
+<div class="absolute -right-16 -top-16 w-80 h-80 rounded-full bg-secondary-fixed/30 blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-space-lg">
+<div class="space-y-space-xs max-w-3xl">
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex items-center px-space-xs py-0.5 rounded text-[11px] font-label-sm uppercase tracking-widest bg-primary-container text-on-primary font-bold">
+            Respublika Markaziy Tizimi
+          </span>
+<span class="text-outline text-label-sm">•</span>
+<span class="font-code-sm text-code-sm text-secondary font-semibold">SEC-LVL-4: MAXFİY VA NAZORATLI</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-primary font-bold tracking-tight">
+          Tizim Sozlamalari va Kiberxavfsizlik Nazorati
+        </h1>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Foydalanuvchi rollari ierarxiyasi, biometrik Face ID API tokenlari va real-vaqt kiber-xavfsizlik audit jurnali.
+        </p>
+</div>
+<!-- Quick Status Badges -->
+<div class="flex flex-wrap lg:flex-col xl:flex-row items-start lg:items-end gap-space-sm shrink-0">
+<div class="flex items-center gap-space-xs px-space-sm py-1.5 rounded-lg bg-surface-container font-label-md text-label-md text-on-surface">
+<span class="w-2.5 h-2.5 rounded-full bg-[#15803d] animate-pulse"></span>
+<span class="font-medium">Protokol:</span>
+<span class="font-code-sm text-code-sm font-semibold text-primary">TLS 1.3 Strict</span>
+</div>
+<div class="flex items-center gap-space-xs px-space-sm py-1.5 rounded-lg bg-surface-container font-label-md text-label-md text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-secondary">vpn_key</span>
+<span class="font-medium">Jami Faol Kalitlar:</span>
+<span class="font-bold text-primary">1,482 ta</span>
+</div>
+<div class="flex items-center gap-space-xs px-space-sm py-1.5 rounded-lg bg-surface-container font-label-md text-label-md text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-secondary">update</span>
+<span>Sinxronlash:</span>
+<span class="font-code-sm text-code-sm text-on-surface font-semibold">2 daqiqa oldin</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Primary Sub-Navigation / Tab Bar -->
+<div class="flex items-center justify-between bg-surface-container-low p-space-xs rounded-xl shadow-inner">
+<div class="flex flex-wrap items-center gap-space-xs">
+<button class="flex items-center gap-space-xs px-space-md py-space-sm rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">account_tree</span>
+<span>Huquqlar va Rollar Matritsasi</span>
+<span class="ml-1 px-1.5 py-0.5 rounded text-[10px] font-code-sm bg-surface-container-highest text-on-surface-variant">5 pogʻona</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-space-sm rounded-lg font-label-md text-label-md bg-primary-container text-on-primary shadow-[0_1px_3px_0_rgba(22,50,92,0.12)] font-semibold transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">key</span>
+<span>API Kalitlar Boshqaruvi (Turniket &amp; Face ID)</span>
+<span class="ml-1 px-1.5 py-0.5 rounded text-[10px] font-code-sm bg-secondary-container text-on-secondary-container">1,482 faol</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-space-sm rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">security_update_good</span>
+<span>Xavfsizlik Audit Jurnali</span>
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+</button>
+</div>
+<div class="hidden md:flex items-center gap-space-xs px-space-sm font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified_user</span>
+<span>Avtorizatsiya darajasi: Root Admin (A. Qodirov)</span>
+</div>
+</div>
+<!-- SECTION 2: ACTIVE FOREGROUND — API KALITLAR TABLITSASI -->
+<div class="relative bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden p-space-lg space-y-space-md">
+<!-- Section Header and Action Bar -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[22px]">developer_board</span>
+<h2 class="font-headline-md text-headline-md text-primary font-bold">Biometrik Face ID va Turniket API Kalitlari</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+          Muassasalar va lokal Kiosk/Turniket dasturlari uchun ajratilgan maxfiy autentifikatsiya tokenlari nazorati.
+        </p>
+</div>
+<div class="flex items-center gap-space-xs shrink-0">
+<button class="flex items-center gap-space-xs px-space-md py-space-sm rounded bg-surface-container font-label-md text-label-md text-primary hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">file_download</span>
+<span>Eksport (CSV)</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-space-sm rounded bg-primary-container text-on-primary font-label-md text-label-md font-semibold hover:bg-primary transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span>+ Yangi API Kalit yaratish</span>
+</button>
+</div>
+</div>
+<!-- Filters and Search Toolbar -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-sm bg-surface-container-low p-space-sm rounded-lg">
+<div class="md:col-span-5 relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-[18px] text-outline">search</span>
+<input class="w-full pl-9 pr-3 py-2 bg-surface-container-lowest rounded text-body-sm font-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest" placeholder="API kalit, maktab nomi yoki kod boʻyicha qidiruv..." type="text" value="244"/>
+</div>
+<div class="md:col-span-3">
+<select class="w-full py-2 px-3 bg-surface-container-lowest rounded text-body-sm font-body-sm text-on-surface focus:outline-none">
+<option>Barcha darajalar (Respublika / Viloyat / Tuman / Maktab)</option>
+<option selected="">Maktab (Turniket Kiosk)</option>
+<option>Tuman Gateway</option>
+<option>Viloyat Hub</option>
+</select>
+</div>
+<div class="md:col-span-2">
+<select class="w-full py-2 px-3 bg-surface-container-lowest rounded text-body-sm font-body-sm text-on-surface focus:outline-none">
+<option>Barcha holatlar</option>
+<option selected="">🟢 Faol kalitlar</option>
+<option>🟡 Yangilash talab</option>
+<option>🔴 Bekor qilingan</option>
+</select>
+</div>
+<div class="md:col-span-2 flex items-center justify-end">
+<button class="w-full py-2 px-3 bg-surface-container hover:bg-surface-container-high rounded text-label-md font-label-md text-on-surface text-center transition-colors" type="button">
+          Filtrni tozalash
+        </button>
+</div>
+</div>
+<!-- Main Keys Data Table -->
+<div class="overflow-x-auto rounded-lg shadow-[0_1px_4px_rgba(22,50,92,0.05)]">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3 px-4 font-semibold">Kalit identifikatori</th>
+<th class="py-3 px-4 font-semibold">Biriktirilgan Ega / Muassasa</th>
+<th class="py-3 px-4 font-semibold">Boshqaruv Darajasi</th>
+<th class="py-3 px-4 font-semibold">Yaratilgan sana</th>
+<th class="py-3 px-4 font-semibold">Oxirgi foydalanish</th>
+<th class="py-3 px-4 font-semibold">Xavfsizlik Holati</th>
+<th class="py-3 px-4 font-semibold text-right">Amallar</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 text-body-sm font-body-sm text-on-surface">
+<!-- Row 1 (Clicked / Active modal target) -->
+<tr class="bg-surface-container/60 hover:bg-surface-container-high transition-colors">
+<td class="py-3.5 px-4 font-code-sm text-code-sm font-semibold text-primary">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary">key</span>
+<span class="tracking-wide">mkt_8f3a••••••••92b1</span>
+<button class="text-outline hover:text-primary transition-colors" title="Kalit nusxalash" type="button">
+<span class="material-symbols-outlined text-[15px]">content_copy</span>
+</button>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="font-semibold text-on-surface">244-sonli umumtaʼlim maktabi</div>
+<div class="text-[12px] text-on-surface-variant">Toshkent sh., Yunusobod tumani (SCH-YUN-244)</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center px-2 py-0.5 rounded text-[11px] font-label-sm font-medium bg-surface-container-highest text-primary">
+                Maktab (Turniket Kiosk)
+              </span>
+</td>
+<td class="py-3.5 px-4 font-code-sm text-code-sm text-on-surface-variant">12.01.2025</td>
+<td class="py-3.5 px-4">
+<div class="font-medium text-on-surface">Bugun, 08:14</div>
+<div class="text-[11px] text-[#15803d] font-code-sm">Face ID sync (0.8s)</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-label-sm font-label-sm font-semibold bg-[#f0fdf4] text-[#15803d]">
+<span class="w-1.5 h-1.5 rounded-full bg-[#15803d]"></span>
+                Faol (TLS 1.3)
+              </span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<div class="inline-flex items-center gap-space-xs">
+<button class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded bg-tertiary-container text-on-tertiary-container font-label-sm text-label-sm font-bold shadow-sm ring-2 ring-tertiary-fixed-dim" type="button">
+<span class="material-symbols-outlined text-[15px]">bolt</span>
+<span>Yangilash</span>
+</button>
+<button class="inline-flex items-center px-2 py-1.5 rounded bg-error-container text-on-error-container font-label-sm text-label-sm font-medium hover:bg-error hover:text-on-error transition-colors" type="button">
+<span class="material-symbols-outlined text-[15px]">block</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="bg-surface-container-lowest hover:bg-surface-container transition-colors">
+<td class="py-3.5 px-4 font-code-sm text-code-sm font-semibold text-primary">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary">dns</span>
+<span class="tracking-wide">tmn_4c2d••••••••a8e0</span>
+<button class="text-outline hover:text-primary transition-colors" title="Kalit nusxalash" type="button">
+<span class="material-symbols-outlined text-[15px]">content_copy</span>
+</button>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="font-semibold text-on-surface">Urgut tumani XTB markaziy serveri</div>
+<div class="text-[12px] text-on-surface-variant">Samarqand viloyati, Urgut tumani</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center px-2 py-0.5 rounded text-[11px] font-label-sm font-medium bg-secondary-fixed text-on-secondary-fixed">
+                Tuman Gateway
+              </span>
+</td>
+<td class="py-3.5 px-4 font-code-sm text-code-sm text-on-surface-variant">04.02.2025</td>
+<td class="py-3.5 px-4">
+<div class="font-medium text-on-surface">Kecha, 18:42</div>
+<div class="text-[11px] text-on-surface-variant font-code-sm">Avtomatik agregatsiya</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-label-sm font-label-sm font-semibold bg-[#f0fdf4] text-[#15803d]">
+<span class="w-1.5 h-1.5 rounded-full bg-[#15803d]"></span>
+                Faol
+              </span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<div class="inline-flex items-center gap-space-xs">
+<button class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded bg-surface-container font-label-sm text-label-sm font-medium text-tertiary hover:bg-tertiary-container hover:text-on-tertiary-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[15px]">bolt</span>
+<span>Yangilash</span>
+</button>
+<button class="inline-flex items-center px-2 py-1.5 rounded bg-surface-container text-on-surface-variant hover:bg-error-container hover:text-on-error-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[15px]">block</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="bg-surface-container-lowest hover:bg-surface-container transition-colors">
+<td class="py-3.5 px-4 font-code-sm text-code-sm font-semibold text-primary">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary">hub</span>
+<span class="tracking-wide">vly_991b••••••••55fc</span>
+<button class="text-outline hover:text-primary transition-colors" title="Kalit nusxalash" type="button">
+<span class="material-symbols-outlined text-[15px]">content_copy</span>
+</button>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="font-semibold text-on-surface">Samarqand viloyati Xalq taʼlimi boshqarmasi</div>
+<div class="text-[12px] text-on-surface-variant">Hududiy boshqaruv punkti</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center px-2 py-0.5 rounded text-[11px] font-label-sm font-medium bg-primary-fixed text-on-primary-fixed">
+                Viloyat Hub
+              </span>
+</td>
+<td class="py-3.5 px-4 font-code-sm text-code-sm text-on-surface-variant">20.12.2024</td>
+<td class="py-3.5 px-4">
+<div class="font-medium text-on-surface">Bugun, 08:30</div>
+<div class="text-[11px] text-on-surface-variant font-code-sm">Analitika oqimi</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-label-sm font-label-sm font-semibold bg-[#f0fdf4] text-[#15803d]">
+<span class="w-1.5 h-1.5 rounded-full bg-[#15803d]"></span>
+                Faol
+              </span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<div class="inline-flex items-center gap-space-xs">
+<button class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded bg-surface-container font-label-sm text-label-sm font-medium text-tertiary hover:bg-tertiary-container hover:text-on-tertiary-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[15px]">bolt</span>
+<span>Yangilash</span>
+</button>
+<button class="inline-flex items-center px-2 py-1.5 rounded bg-surface-container text-on-surface-variant hover:bg-error-container hover:text-on-error-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[15px]">block</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="bg-surface-container-lowest hover:bg-surface-container transition-colors">
+<td class="py-3.5 px-4 font-code-sm text-code-sm font-semibold text-primary">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-tertiary-container">warning</span>
+<span class="tracking-wide">mkt_12a7••••••••33dd</span>
+<button class="text-outline hover:text-primary transition-colors" title="Kalit nusxalash" type="button">
+<span class="material-symbols-outlined text-[15px]">content_copy</span>
+</button>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="font-semibold text-on-surface">17-sonli umumtaʼlim maktabi</div>
+<div class="text-[12px] text-on-surface-variant">Toshkent sh., Mirzo Ulugʻbek tumani</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center px-2 py-0.5 rounded text-[11px] font-label-sm font-medium bg-surface-container-highest text-primary">
+                Maktab (Turniket Kiosk)
+              </span>
+</td>
+<td class="py-3.5 px-4 font-code-sm text-code-sm text-on-surface-variant">15.03.2024</td>
+<td class="py-3.5 px-4">
+<div class="font-medium text-on-surface">14 kun oldin</div>
+<div class="text-[11px] text-error font-code-sm">Aloqa uzilgan</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-label-sm font-label-sm font-semibold bg-[#fffbeb] text-[#b45309]">
+<span class="w-1.5 h-1.5 rounded-full bg-[#b45309]"></span>
+                Yangilash tavsiya (90+ kun)
+              </span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<div class="inline-flex items-center gap-space-xs">
+<button class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold hover:bg-tertiary-fixed-dim transition-colors" type="button">
+<span class="material-symbols-outlined text-[15px]">bolt</span>
+<span>Yangilash</span>
+</button>
+<button class="inline-flex items-center px-2 py-1.5 rounded bg-surface-container text-on-surface-variant hover:bg-error-container hover:text-on-error-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[15px]">block</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 5 -->
+<tr class="bg-surface-container-lowest hover:bg-surface-container transition-colors opacity-75">
+<td class="py-3.5 px-4 font-code-sm text-code-sm text-outline">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-error">cancel</span>
+<span class="tracking-wide line-through">mkt_05e9••••••••77a1</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="font-semibold text-on-surface">5-sonli ixtisoslashtirilgan maktab</div>
+<div class="text-[12px] text-on-surface-variant">Fargʻona viloyati, Qoʻqon sh.</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center px-2 py-0.5 rounded text-[11px] font-label-sm font-medium bg-surface-container text-on-surface-variant">
+                Maktab
+              </span>
+</td>
+<td class="py-3.5 px-4 font-code-sm text-code-sm text-on-surface-variant">10.09.2024</td>
+<td class="py-3.5 px-4">
+<div class="font-medium text-on-surface-variant">01.02.2025</div>
+<div class="text-[11px] text-error font-code-sm">Bloklangan</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-label-sm font-label-sm font-semibold bg-[#fef2f2] text-[#b91c1c]">
+<span class="w-1.5 h-1.5 rounded-full bg-[#b91c1c]"></span>
+                Bekor qilingan (Revoked)
+              </span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<button class="inline-flex items-center gap-1 px-3 py-1.5 rounded bg-surface-container font-label-sm text-label-sm font-medium text-on-surface-variant hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[15px]">history</span>
+<span>Tarixni koʻrish</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Pagination & Meta -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pt-space-xs text-body-sm font-body-sm text-on-surface-variant">
+<div>Jami 1,482 ta kalitdan 1—5 tasi koʻrsatilmoqda</div>
+<div class="flex items-center gap-1">
+<button class="px-2.5 py-1 rounded bg-surface-container text-on-surface-variant hover:bg-surface-container-high" type="button">Avvalgi</button>
+<button class="px-3 py-1 rounded bg-primary-container text-on-primary font-semibold" type="button">1</button>
+<button class="px-3 py-1 rounded bg-surface-container text-on-surface hover:bg-surface-container-high" type="button">2</button>
+<button class="px-3 py-1 rounded bg-surface-container text-on-surface hover:bg-surface-container-high" type="button">3</button>
+<span class="px-1 text-outline">...</span>
+<button class="px-3 py-1 rounded bg-surface-container text-on-surface hover:bg-surface-container-high" type="button">297</button>
+<button class="px-2.5 py-1 rounded bg-surface-container text-on-surface-variant hover:bg-surface-container-high" type="button">Keyingi</button>
+</div>
+</div>
+<!-- ACTIVE CONFIRMATION MODAL OVERLAY (Focus on Row 1) -->
+<div class="fixed inset-0 z-50 flex items-center justify-center p-space-md bg-inverse-surface/50 backdrop-blur-sm" id="regeneration-modal">
+<div class="relative w-full max-w-2xl bg-surface-container-lowest rounded-xl shadow-2xl overflow-hidden animate-in fade-in zoom-in-95 duration-200">
+<!-- Modal Top Bar -->
+<div class="flex items-center justify-between px-space-xl py-space-lg bg-surface-container-low">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed shadow-sm">
+<span class="material-symbols-outlined text-[24px]">security</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold">API Kalitini Yangilashni Tasdiqlaysizmi?</h3>
+<span class="px-2 py-0.5 rounded text-[10px] font-label-sm uppercase tracking-wide bg-tertiary-container text-on-tertiary-container font-semibold">Xavfsizlik darajasi: Yuqori</span>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Muassasa turniket va kiosk integratsiya kalitini qayta generatsiya qilish</p>
+</div>
+</div>
+<button class="p-1 rounded-lg text-outline hover:text-on-surface hover:bg-surface-container transition-colors" onclick="document.getElementById('regeneration-modal').style.display='none'" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Modal Content Body -->
+<div class="p-space-xl space-y-space-lg">
+<!-- Target Institution Banner -->
+<div class="p-space-md rounded-lg bg-surface-container flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div>
+<div class="font-label-sm text-label-sm text-secondary font-semibold uppercase">Tanlangan Maktab Kiosk Tizimi</div>
+<div class="font-label-lg text-label-lg text-on-surface font-bold mt-0.5">244-sonli umumtaʼlim maktabi (SCH-YUN-244)</div>
+<div class="text-body-sm font-body-sm text-on-surface-variant">Toshkent shahar, Yunusobod tumani</div>
+</div>
+<div class="bg-surface-container-lowest px-space-md py-1.5 rounded font-code-sm text-code-sm font-semibold text-primary shadow-sm shrink-0">
+              mkt_8f3a••••••••92b1
+            </div>
+</div>
+<!-- Bold Warning Box -->
+<div class="p-space-md rounded-lg bg-[#fffbeb] text-on-surface space-y-space-xs">
+<div class="flex items-center gap-space-xs font-label-md text-label-md font-bold text-[#b45309]">
+<span class="material-symbols-outlined text-[20px]">warning</span>
+<span>DIQQAT VA XAVFSIZLIK TALABI</span>
+</div>
+<p class="font-body-sm text-body-sm text-[#78350f] leading-relaxed">
+              Eski kalit darhol bekor qilinadi. Maktabdagi Python Face ID turniket dasturi va Kiosk qurilmasi yangi kalit kiritilmaguncha server bilan sinxronlanmaydi va yangi kalitni talab qiladi. Davomat oqimi toʻxtab qolmasligi uchun yangi kalitni darhol apparatga yuklang.
+            </p>
+</div>
+<!-- Input Fields for Audit -->
+<div class="space-y-space-sm">
+<div>
+<label class="block font-label-md text-label-md text-on-surface font-semibold mb-1.5">
+                Yangilash sababi va asosi:
+              </label>
+<select class="w-full px-space-md py-2.5 bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface focus:outline-none focus:bg-surface-container">
+<option value="routine">Rejali 90 kunlik xavfsizlik yangilanishi</option>
+<option value="hardware">Turniket Kiosk qurilmasi yoki kompyuteri almashtirildi</option>
+<option value="compromise">Xavfsizlik shubhasi (Kalit oshkor boʻlish ehtimoli)</option>
+<option value="it_admin">Maktab IT masʼul xodimi yangilandi</option>
+</select>
+</div>
+<div class="flex items-start gap-space-sm pt-space-xs">
+<input checked="" class="mt-1 w-4 h-4 rounded text-primary focus:ring-0 cursor-pointer" id="sms_notify" type="checkbox"/>
+<label class="font-body-sm text-body-sm text-on-surface cursor-pointer select-none" for="sms_notify">
+                Yangi generatsiya qilingan kalitni maktab masʼul direktorining telefoniga (<span class="font-code-sm font-semibold">+998 90 123-45-67</span>) SMS orqali bir martalik xavfsiz havolada yuborish
+              </label>
+</div>
+</div>
+<!-- Institutional Audit Notice -->
+<div class="flex items-center gap-space-xs font-code-sm text-code-sm text-outline">
+<span class="material-symbols-outlined text-[16px]">info</span>
+<span>Ushbu operatsiya Respublika xavfsizlik audit jurnalida qayd etiladi va Root IP-ga biriktiriladi.</span>
+</div>
+</div>
+<!-- Modal Actions Footer -->
+<div class="px-space-xl py-space-md bg-surface-container-low flex items-center justify-end gap-space-sm">
+<button class="px-space-lg py-2.5 rounded font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" onclick="document.getElementById('regeneration-modal').style.display='none'" type="button">
+            Bekor qilish
+          </button>
+<button class="flex items-center gap-space-xs px-space-xl py-2.5 rounded font-label-md text-label-md font-bold bg-tertiary-container text-on-tertiary-container hover:bg-tertiary hover:text-on-tertiary transition-all shadow-md" onclick="document.getElementById('regeneration-modal').style.display='none'" type="button">
+<span class="material-symbols-outlined text-[18px]">bolt</span>
+<span>Yangilash va Yangi Kalit Generatsiya Qilish</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION 1: ROLE PYRAMID & PERMISSION MATRIX (Huquqlar & Rollar) -->
+<div class="space-y-space-lg">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-sm">
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[22px]">shield_person</span>
+<h2 class="font-headline-md text-headline-md text-primary font-bold">Huquqlar va Rollar Matritsasi</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+          Respublika miqyosidagi vertikal tizim ruxsatlari ierarxiyasi va vakolatlar taqsimoti.
+        </p>
+</div>
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-secondary font-medium">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span>Standart: Vazirlik reglamenti 2024/09-son</span>
+</div>
+</div>
+<!-- Role Pyramid Cards connected horizontally -->
+<div class="grid grid-cols-1 md:grid-cols-5 gap-space-sm relative">
+<!-- 1. Bosh Admin -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm relative flex flex-col justify-between overflow-hidden">
+<div class="absolute top-0 left-0 right-0 h-1 bg-primary"></div>
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-code-sm text-code-sm font-bold text-primary">01 / ROOT</span>
+<span class="material-symbols-outlined text-primary text-[18px]">admin_panel_settings</span>
+</div>
+<div class="font-headline-sm text-headline-sm text-on-surface font-bold leading-tight">Bosh Admin (Respublika)</div>
+<div class="mt-1 font-label-sm text-label-sm text-secondary font-semibold">Superuser / Toʻliq vakolat</div>
+<p class="mt-space-xs font-body-sm text-body-sm text-on-surface-variant">Barcha viloyat, tuman, maktablar va global API kalitlar ustidan nazorat.</p>
+</div>
+<div class="mt-space-md pt-space-xs">
+<span class="inline-block px-2 py-0.5 rounded text-[11px] font-label-sm bg-primary-fixed text-on-primary-fixed font-semibold">Global Qamrov</span>
+</div>
+</div>
+<!-- 2. Viloyat Admin -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm relative flex flex-col justify-between overflow-hidden">
+<div class="absolute top-0 left-0 right-0 h-1 bg-secondary"></div>
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-code-sm text-code-sm font-bold text-secondary">02 / REGION</span>
+<span class="material-symbols-outlined text-secondary text-[18px]">location_city</span>
+</div>
+<div class="font-headline-sm text-headline-sm text-on-surface font-bold leading-tight">Viloyat Admin</div>
+<div class="mt-1 font-label-sm text-label-sm text-secondary font-semibold">Boshqarma Darajasi</div>
+<p class="mt-space-xs font-body-sm text-body-sm text-on-surface-variant">Viloyatdagi barcha tumanlar, hududiy davomat oqimi va hisobotlar tahlili.</p>
+</div>
+<div class="mt-space-md pt-space-xs">
+<span class="inline-block px-2 py-0.5 rounded text-[11px] font-label-sm bg-surface-container font-semibold text-secondary">14 Hudud</span>
+</div>
+</div>
+<!-- 3. Tuman Admin -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm relative flex flex-col justify-between overflow-hidden">
+<div class="absolute top-0 left-0 right-0 h-1 bg-secondary-container"></div>
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-code-sm text-code-sm font-bold text-on-secondary-container">03 / DISTRICT</span>
+<span class="material-symbols-outlined text-secondary text-[18px]">holiday_village</span>
+</div>
+<div class="font-headline-sm text-headline-sm text-on-surface font-bold leading-tight">Tuman Admin</div>
+<div class="mt-1 font-label-sm text-label-sm text-secondary font-semibold">Tuman XTB Boʻlimi</div>
+<p class="mt-space-xs font-body-sm text-body-sm text-on-surface-variant">Tuman tasarrufidagi maktablar, direktor hisoblari va turniket holati.</p>
+</div>
+<div class="mt-space-md pt-space-xs">
+<span class="inline-block px-2 py-0.5 rounded text-[11px] font-label-sm bg-surface-container font-semibold text-on-surface-variant">208 Tuman</span>
+</div>
+</div>
+<!-- 4. Maktab Admin -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm relative flex flex-col justify-between overflow-hidden">
+<div class="absolute top-0 left-0 right-0 h-1 bg-on-tertiary-container"></div>
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-code-sm text-code-sm font-bold text-on-tertiary-container">04 / SCHOOL</span>
+<span class="material-symbols-outlined text-tertiary-container text-[18px]">school</span>
+</div>
+<div class="font-headline-sm text-headline-sm text-on-surface font-bold leading-tight">Maktab Admin</div>
+<div class="mt-1 font-label-sm text-label-sm text-tertiary-container font-semibold">Direktor / IT Operator</div>
+<p class="mt-space-xs font-body-sm text-body-sm text-on-surface-variant">Oʻquvchilar, oʻqituvchilar, sinflar va Kiosk kamerasidan Face ID yuklash.</p>
+</div>
+<div class="mt-space-md pt-space-xs">
+<span class="inline-block px-2 py-0.5 rounded text-[11px] font-label-sm bg-surface-container font-semibold text-on-surface-variant">10,140+ Maktab</span>
+</div>
+</div>
+<!-- 5. Xodim (Oʻqituvchi) -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm relative flex flex-col justify-between overflow-hidden">
+<div class="absolute top-0 left-0 right-0 h-1 bg-outline-variant"></div>
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-code-sm text-code-sm font-bold text-outline">05 / USER</span>
+<span class="material-symbols-outlined text-outline text-[18px]">badge</span>
+</div>
+<div class="font-headline-sm text-headline-sm text-on-surface font-bold leading-tight">Xodim (Oʻqituvchi)</div>
+<div class="mt-1 font-label-sm text-label-sm text-outline font-semibold">Shaxsiy Kabinet</div>
+<p class="mt-space-xs font-body-sm text-body-sm text-on-surface-variant">Faqat oʻz shaxsiy davomati, dars jadvallari va ish vaqti hisobi (cheklangan).</p>
+</div>
+<div class="mt-space-md pt-space-xs">
+<span class="inline-block px-2 py-0.5 rounded text-[11px] font-label-sm bg-surface-container font-semibold text-on-surface-variant">Faqat Read-Only</span>
+</div>
+</div>
+</div>
+<!-- Permission Matrix Table -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden p-space-lg space-y-space-md">
+<div class="flex items-center justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold">Modullar va Ruxsatlar Matritsasi (Interaktiv)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Rollar boʻyicha amallarni belgilash va oʻzgartirish</p>
+</div>
+<button class="px-space-md py-1.5 rounded bg-primary-container text-on-primary font-label-md text-label-md font-semibold hover:bg-primary transition-colors" type="button">
+          Oʻzgarishlarni saqlash
+        </button>
+</div>
+<div class="overflow-x-auto rounded-lg">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-high text-on-surface font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3 px-4 font-semibold w-1/3">Amallar va Modullar</th>
+<th class="py-3 px-4 font-semibold text-center">Bosh Admin</th>
+<th class="py-3 px-4 font-semibold text-center">Viloyat Admin</th>
+<th class="py-3 px-4 font-semibold text-center">Tuman Admin</th>
+<th class="py-3 px-4 font-semibold text-center">Maktab Admin</th>
+<th class="py-3 px-4 font-semibold text-center">Xodim</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 text-body-sm font-body-sm text-on-surface">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-3.5 px-4 font-medium text-on-surface">
+<div class="font-semibold text-primary">Statistika va Tahlillar</div>
+<div class="text-[12px] text-on-surface-variant">Respublika, hududiy va sinf kesimidagi barcha analitik grafiklar</div>
+</td>
+<td class="py-3.5 px-4 text-center">
+<input checked="" class="w-4 h-4 rounded text-primary accent-primary cursor-not-allowed opacity-90" disabled="" type="checkbox"/>
+</td>
+<td class="py-3.5 px-4 text-center">
+<input checked="" class="w-4 h-4 rounded text-primary accent-primary cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-3.5 px-4 text-center">
+<input checked="" class="w-4 h-4 rounded text-primary accent-primary cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-3.5 px-4 text-center">
+<input checked="" class="w-4 h-4 rounded text-primary accent-primary cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-3.5 px-4 text-center">
+<input class="w-4 h-4 rounded text-primary accent-primary cursor-pointer" type="checkbox"/>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-low transition-colors bg-surface-container-low/30">
+<td class="py-3.5 px-4 font-medium text-on-surface">
+<div class="font-semibold text-primary">Davomat Nazorati (Real-time monitoring)</div>
+<div class="text-[12px] text-on-surface-variant">Jonli turniket oqimini koʻrish, kechikish va sababli davomatni belgilash</div>
+</td>
+<td class="py-3.5 px-4 text-center">
+<input checked="" class="w-4 h-4 rounded text-primary accent-primary cursor-not-allowed opacity-90" disabled="" type="checkbox"/>
+</td>
+<td class="py-3.5 px-4 text-center">
+<input checked="" class="w-4 h-4 rounded text-primary accent-primary cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-3.5 px-4 text-center">
+<input checked="" class="w-4 h-4 rounded text-primary accent-primary cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-3.5 px-4 text-center">
+<input checked="" class="w-4 h-4 rounded text-primary accent-primary cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-3.5 px-4 text-center">
+<input class="w-4 h-4 rounded text-primary accent-primary cursor-not-allowed opacity-40" disabled="" type="checkbox"/>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-3.5 px-4 font-medium text-on-surface">
+<div class="font-semibold text-primary">Biometrik Rasmlar va Face ID Embeddinglar</div>
+<div class="text-[12px] text-on-surface-variant">Yangi biometrik rasm yuklash, 512-oʻlchamli vektor hisoblash va model yangilash</div>
+</td>
+<td class="py-3.5 px-4 text-center">
+<input checked="" class="w-4 h-4 rounded text-primary accent-primary cursor-not-allowed opacity-90" disabled="" type="checkbox"/>
+</td>
+<td class="py-3.5 px-4 text-center">
+<span class="text-[11px] font-label-sm font-semibold text-secondary">Cheklangan</span>
+</td>
+<td class="py-3.5 px-4 text-center">
+<span class="text-[11px] font-label-sm font-semibold text-secondary">Cheklangan</span>
+</td>
+<td class="py-3.5 px-4 text-center">
+<input checked="" class="w-4 h-4 rounded text-primary accent-primary cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-3.5 px-4 text-center">
+<span class="text-[11px] font-label-sm text-outline">Faqat koʻrish</span>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container-low transition-colors bg-surface-container-low/30">
+<td class="py-3.5 px-4 font-medium text-on-surface">
+<div class="font-semibold text-primary">Hisobotlar va Eksport (Excel, PDF, Google Sheets)</div>
+<div class="text-[12px] text-on-surface-variant">Davlat xalq taʼlimi standartidagi rasmiy hisobot shakllarini generatsiya qilish</div>
+</td>
+<td class="py-3.5 px-4 text-center">
+<input checked="" class="w-4 h-4 rounded text-primary accent-primary cursor-not-allowed opacity-90" disabled="" type="checkbox"/>
+</td>
+<td class="py-3.5 px-4 text-center">
+<input checked="" class="w-4 h-4 rounded text-primary accent-primary cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-3.5 px-4 text-center">
+<input checked="" class="w-4 h-4 rounded text-primary accent-primary cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-3.5 px-4 text-center">
+<input checked="" class="w-4 h-4 rounded text-primary accent-primary cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-3.5 px-4 text-center">
+<span class="text-[11px] font-label-sm text-outline">Shaxsiy PDF</span>
+</td>
+</tr>
+<!-- Row 5 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-3.5 px-4 font-medium text-on-surface">
+<div class="font-semibold text-primary">Foydalanuvchi va Maktab Yaratish</div>
+<div class="text-[12px] text-on-surface-variant">Yangi muassasa, maʼmuriy hisob va oʻquvchi profillarini roʻyxatdan oʻtkazish</div>
+</td>
+<td class="py-3.5 px-4 text-center">
+<span class="inline-block px-2 py-0.5 rounded text-[10px] font-label-sm font-bold bg-primary text-on-primary">Barcha rollar</span>
+</td>
+<td class="py-3.5 px-4 text-center">
+<span class="inline-block px-2 py-0.5 rounded text-[10px] font-label-sm bg-surface-container text-secondary font-semibold">Tuman admin</span>
+</td>
+<td class="py-3.5 px-4 text-center">
+<span class="inline-block px-2 py-0.5 rounded text-[10px] font-label-sm bg-surface-container text-secondary font-semibold">Maktab admin</span>
+</td>
+<td class="py-3.5 px-4 text-center">
+<span class="inline-block px-2 py-0.5 rounded text-[10px] font-label-sm bg-surface-container text-on-surface font-semibold">Oʻquvchi / Oʻqituvchi</span>
+</td>
+<td class="py-3.5 px-4 text-center">
+<span class="text-[11px] font-label-sm text-error font-medium">Ruxsat yoʻq</span>
+</td>
+</tr>
+<!-- Row 6 -->
+<tr class="hover:bg-surface-container-low transition-colors bg-surface-container-low/30">
+<td class="py-3.5 px-4 font-medium text-on-surface">
+<div class="font-semibold text-primary">API Kalitlarini Generatsiya qilish va Yangilash</div>
+<div class="text-[12px] text-on-surface-variant">Turniket, biometrik kamera va server shlyuzlari uchun maxfiy tokenlar berish</div>
+</td>
+<td class="py-3.5 px-4 text-center">
+<span class="inline-block px-2 py-0.5 rounded text-[10px] font-label-sm font-bold bg-[#15803d] text-white">Toʻliq huquq</span>
+</td>
+<td class="py-3.5 px-4 text-center">
+<span class="inline-block px-2 py-0.5 rounded text-[10px] font-label-sm bg-surface-container text-on-surface font-medium">Tuman uchun</span>
+</td>
+<td class="py-3.5 px-4 text-center">
+<span class="inline-block px-2 py-0.5 rounded text-[10px] font-label-sm bg-surface-container text-on-surface font-medium">Maktab uchun</span>
+</td>
+<td class="py-3.5 px-4 text-center">
+<span class="text-[11px] font-label-sm text-error font-medium">Ruxsat yoʻq</span>
+</td>
+<td class="py-3.5 px-4 text-center">
+<span class="text-[11px] font-label-sm text-error font-medium">Ruxsat yoʻq</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<!-- SECTION 3: XAVFSIZLIK AUDIT JURNALI -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden p-space-lg space-y-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[22px]">history_toggle_off</span>
+<h2 class="font-headline-md text-headline-md text-primary font-bold">Tizim Harakatlari va Xavfsizlik Audit Jurnali</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+          Respublika markaziy kiberxavfsizlik va ruxsatsiz urinishlarni roʻyxatga olish log-jurnali (Real-vaqt).
+        </p>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="inline-block w-2 h-2 rounded-full bg-[#15803d] animate-ping"></span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Jonli tinglash: port 9443</span>
+</div>
+</div>
+<div class="overflow-x-auto rounded-lg">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3 px-4 font-semibold">Vaqt (Timestamp)</th>
+<th class="py-3 px-4 font-semibold">Foydalanuvchi</th>
+<th class="py-3 px-4 font-semibold">Amal (Operatsiya)</th>
+<th class="py-3 px-4 font-semibold">Qamrov / Obyekt</th>
+<th class="py-3 px-4 font-semibold">IP Manzil va Qurilma</th>
+<th class="py-3 px-4 font-semibold text-right">Natija Holati</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 text-body-sm font-body-sm text-on-surface">
+<!-- Audit Row 1 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-3.5 px-4 font-code-sm text-code-sm text-on-surface-variant">
+              24.03.2025 <span class="font-semibold text-primary">08:24:12</span>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-space-xs">
+<div class="w-7 h-7 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center font-bold text-[11px]">
+                  KA
+                </div>
+<div>
+<div class="font-semibold text-on-surface leading-tight">Karimov A.</div>
+<div class="text-[11px] text-on-surface-variant">Tuman Admin (Yunusobod)</div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4 font-medium text-primary">Maktab qoʻshildi</td>
+<td class="py-3.5 px-4 font-code-sm text-code-sm text-on-surface font-medium">SCH-YUN-245 (245-maktab)</td>
+<td class="py-3.5 px-4">
+<div class="font-code-sm text-code-sm text-on-surface">195.158.3.42</div>
+<div class="text-[11px] text-on-surface-variant">Toshkent • Chrome 122</div>
+</td>
+<td class="py-3.5 px-4 text-right">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-label-sm font-label-sm font-semibold bg-[#f0fdf4] text-[#15803d]">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+                Muvaffaqiyatli
+              </span>
+</td>
+</tr>
+<!-- Audit Row 2 -->
+<tr class="hover:bg-surface-container-low transition-colors bg-surface-container-low/20">
+<td class="py-3.5 px-4 font-code-sm text-code-sm text-on-surface-variant">
+              24.03.2025 <span class="font-semibold text-primary">08:10:05</span>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-space-xs">
+<div class="w-7 h-7 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold text-[11px]">
+                  AQ
+                </div>
+<div>
+<div class="font-semibold text-on-surface leading-tight">A. Qodirov</div>
+<div class="text-[11px] text-on-surface-variant">Bosh Administrator (Root)</div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4 font-medium text-primary">API kalit tekshiruvi</td>
+<td class="py-3.5 px-4 font-code-sm text-code-sm text-on-surface font-medium">Samarqand Viloyati Hub</td>
+<td class="py-3.5 px-4">
+<div class="font-code-sm text-code-sm text-on-surface">84.54.72.10</div>
+<div class="text-[11px] text-on-surface-variant">Respublika Ichki Server • TLS 1.3</div>
+</td>
+<td class="py-3.5 px-4 text-right">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-label-sm font-label-sm font-semibold bg-[#f0fdf4] text-[#15803d]">
+<span class="material-symbols-outlined text-[14px]">verified_user</span>
+                Ruxsat berildi
+              </span>
+</td>
+</tr>
+<!-- Audit Row 3 (Alert) -->
+<tr class="hover:bg-surface-container-low transition-colors bg-[#fef2f2]/40">
+<td class="py-3.5 px-4 font-code-sm text-code-sm text-error font-semibold">
+              24.03.2025 07:55:40
+            </td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-space-xs">
+<div class="w-7 h-7 rounded-full bg-error-container text-on-error-container flex items-center justify-center font-bold text-[11px]">
+                  ??
+                </div>
+<div>
+<div class="font-semibold text-error leading-tight">Nomaʼlum soʻrov</div>
+<div class="text-[11px] text-on-surface-variant">Turniket Kiosk Gateway</div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4 font-medium text-error">API kalit avtorizatsiyasi</td>
+<td class="py-3.5 px-4 font-code-sm text-code-sm text-on-surface font-medium">5-sonli maktab turniket</td>
+<td class="py-3.5 px-4">
+<div class="font-code-sm text-code-sm text-on-surface">213.230.100.18</div>
+<div class="text-[11px] text-error font-semibold">Qoʻqon • Python Request Client</div>
+</td>
+<td class="py-3.5 px-4 text-right">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-label-sm font-label-sm font-semibold bg-[#fee2e2] text-[#b91c1c]">
+<span class="material-symbols-outlined text-[14px]">dangerous</span>
+                Rad etildi (Kalit bekor qilingan)
+              </span>
+</td>
+</tr>
+<!-- Audit Row 4 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-3.5 px-4 font-code-sm text-code-sm text-on-surface-variant">
+              23.03.2025 <span class="font-semibold text-primary">18:30:19</span>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-space-xs">
+<div class="w-7 h-7 rounded-full bg-surface-container-highest text-primary flex items-center justify-center font-bold text-[11px]">
+                  SJ
+                </div>
+<div>
+<div class="font-semibold text-on-surface leading-tight">Saidov J.</div>
+<div class="text-[11px] text-on-surface-variant">Maktab Admin (17-maktab)</div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4 font-medium text-primary">Face ID biometrik model yangilandi</td>
+<td class="py-3.5 px-4 font-body-sm text-body-sm text-on-surface font-medium">Jasur Akromov (10-A sinf)</td>
+<td class="py-3.5 px-4">
+<div class="font-code-sm text-code-sm text-on-surface">178.218.201.55</div>
+<div class="text-[11px] text-on-surface-variant">Kamera Kiosk • FaceRecognition v2.4</div>
+</td>
+<td class="py-3.5 px-4 text-right">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-label-sm font-label-sm font-semibold bg-[#f0fdf4] text-[#15803d]">
+<span class="material-symbols-outlined text-[14px]">check</span>
+                Saqlandi
+              </span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div></main></div></body></html>

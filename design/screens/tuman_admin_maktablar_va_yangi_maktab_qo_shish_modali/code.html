@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+
+<html lang="uz"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-secondary-fixed":"#001d33","primary-fixed-dim":"#abc8f9","surface-variant":"#d5e3fc","on-error-container":"#93000a","inverse-primary":"#abc8f9","on-primary-fixed-variant":"#2a4771","error":"#ba1a1a","on-tertiary-container":"#e09231","surface-dim":"#ccdbf3","primary-fixed":"#d5e3ff","tertiary":"#371e00","on-surface-variant":"#43474e","primary-container":"#1b3a63","tertiary-fixed":"#ffdcbc","inverse-surface":"#233144","background":"#f8f9ff","outline-variant":"#c4c6d0","inverse-on-surface":"#eaf1ff","surface-bright":"#f8f9ff","on-background":"#0d1c2e","on-error":"#ffffff","on-tertiary-fixed-variant":"#683d00","surface-container-low":"#eff4ff","surface":"#f8f9ff","error-container":"#ffdad6","surface-container-high":"#dce9ff","on-secondary-container":"#005284","tertiary-fixed-dim":"#ffb86a","on-primary-fixed":"#001b3c","secondary":"#1e6296","surface-container":"#e6eeff","surface-tint":"#435f8a","on-secondary-fixed-variant":"#004a77","on-surface":"#0d1c2e","on-secondary":"#ffffff","tertiary-container":"#553100","on-primary-container":"#88a5d4","on-primary":"#ffffff","outline":"#74777f","surface-container-lowest":"#ffffff","surface-container-highest":"#d5e3fc","primary":"#00244b","secondary-container":"#8cc6ff","on-tertiary-fixed":"#2c1700","secondary-fixed-dim":"#98cbff","secondary-fixed":"#cfe5ff","on-tertiary":"#ffffff"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-lg":"1.25rem","space-md":"0.875rem","gutter":"1.25rem","space-xl":"1.75rem","space-sm":"0.5rem","margin":"1.75rem","space-xs":"0.25rem"},"fontFamily":{"body-md":["Inter"],"label-sm":["Inter"],"headline-lg":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"body-sm":["Inter"],"body-lg":["Inter"],"headline-sm":["Plus Jakarta Sans"],"label-lg":["Inter"],"headline-xl":["Plus Jakarta Sans"],"code-sm":["JetBrains Mono"],"label-md":["Inter"]},"fontSize":{"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.03em","fontWeight":"600"}],"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-md":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-sm":["16px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"headline-xl":["30px",{"lineHeight":"38px","letterSpacing":"-0.02em","fontWeight":"700"}],"code-sm":["12px",{"lineHeight":"16px","fontWeight":"500"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-screen w-[260px] bg-surface-container-lowest z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(22,50,92,0.06)]"><div class="flex flex-col flex-1 overflow-y-auto"><div class="h-16 px-space-md flex items-center gap-space-sm bg-surface-container-lowest"><img alt="Brand logo. - Primary color: #1b3a63
+- Font: plusJakartaSans
+- Mode: light
+- Roundness: rounded-sm
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XKpgFUA_ZLL6laM_UqoO_vU2M-QQF7DWOY8FD-MVppK1kG6wPo8W8rQ4X49I5b-QBa7yZQ-OOAKrKDbVCjevhkxCPaJMdfs1p6G6G-6sItcqVVfeLHn50-s0eIjD85G15WFlsg2HdqWxn0-4LIXtWVwW7lhWuK_aj5lbXlx12gr0dGuXyEgOh8_x1lzlSxSFwhd1FQXMaq14Plr6vYua8mpazYQL8papQQNjAOTTSf0e6DnnIA4xEigEw"/><div class="flex flex-col min-w-0 leading-tight"><span class="font-headline-sm text-headline-sm text-primary tracking-tight truncate">Yagona Ta'lim</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider truncate">Davomat &amp; Nazorat</span></div></div><div class="p-space-md"><div class="p-space-sm bg-surface-container-low rounded-xl flex flex-col gap-space-xs"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Amaldagi rol</span><span class="flex h-2 w-2 relative"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span></span></div><div class="font-headline-sm text-headline-sm text-primary truncate">Tuman administratori</div><div class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm"><span class="material-symbols-outlined text-[16px] text-secondary">location_city</span><span class="truncate">Yunusobod tumani</span></div></div></div><nav class="flex-1 px-space-md space-y-1" data-active-classes="bg-primary-container text-on-primary font-label-lg rounded-xl shadow-[0_1px_3px_0_rgba(22,50,92,0.06)]"><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="bosh-sahifa" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="truncate">Bosh sahifa</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-sm py-space-sm transition-colors bg-primary-container text-on-primary font-label-lg rounded-xl shadow-[0_1px_3px_0_rgba(22,50,92,0.06)]" data-path="maktablar" href="#"><span class="material-symbols-outlined text-[20px]">account_balance</span><span class="truncate">Maktablar</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="davomat" href="#"><span class="material-symbols-outlined text-[20px]">fact_check</span><span class="truncate">Davomat</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="statistika" href="#"><span class="material-symbols-outlined text-[20px]">analytics</span><span class="truncate">Statistika</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="xodimlar" href="#"><span class="material-symbols-outlined text-[20px]">badge</span><span class="truncate">Xodimlar</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="sozlamalar" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span class="truncate">Sozlamalar</span></a></nav></div><div class="p-space-md"><div class="p-space-sm bg-surface-container-low rounded-xl flex flex-col gap-space-xs"><div class="flex items-center justify-between"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[18px] text-secondary">center_focus_strong</span><span class="font-label-md text-label-md text-on-surface font-semibold">Face ID Gateway</span></div><span class="font-code-sm text-code-sm text-on-surface-variant bg-surface-container px-1.5 py-0.5 rounded">v2.4-rt</span></div><div class="flex items-center justify-between pt-1"><div class="flex items-center gap-space-xs"><span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-500 opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-600"></span></span><span class="font-body-sm text-body-sm text-on-surface font-medium">Gateway Faol</span></div><div class="flex items-center gap-1 font-code-sm text-code-sm text-on-surface-variant"><span class="material-symbols-outlined text-[14px] text-secondary">speed</span><span>14ms</span></div></div></div></div></aside><div class="pl-[260px]"><header class="fixed top-0 left-[260px] right-0 h-16 bg-surface-container-lowest/95 backdrop-blur-md z-40 px-margin flex items-center justify-between shadow-[0_1px_8px_rgba(22,50,92,0.04)]"><div class="flex items-center gap-space-lg flex-1 max-w-xl"><div class="relative w-full max-w-md"><div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none"><span class="material-symbols-outlined text-[20px] text-on-surface-variant">search</span></div><input class="w-full pl-9 pr-14 py-2 bg-surface-container-low text-on-surface placeholder-on-surface-variant font-body-sm text-body-sm rounded-xl focus:bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-secondary transition-all" placeholder="Qidirish (Maktab, ID, direktor)..." type="text"/><div class="absolute inset-y-0 right-0 pr-2 flex items-center pointer-events-none"><kbd class="font-code-sm text-[10px] text-on-surface-variant bg-surface-container px-1.5 py-0.5 rounded shadow-sm">⌘K</kbd></div></div><div class="hidden xl:flex items-center gap-space-xs px-space-sm py-1.5 bg-surface-container-low rounded-full"><span class="material-symbols-outlined text-[18px] text-secondary">cloud_done</span><span class="font-label-sm text-label-sm text-on-surface-variant font-medium whitespace-nowrap">Google Drive &amp; Sheets sinxronlash: <span class="text-secondary font-semibold">Faol</span></span></div></div><div class="flex items-center gap-space-lg"><div class="hidden md:flex items-center gap-space-xs text-on-surface-variant"><span class="material-symbols-outlined text-[18px] text-on-surface-variant">schedule</span><span class="font-label-md text-label-md font-medium whitespace-nowrap">Dushanba, 24-Mart, 2025 · UTC+5</span></div><button class="relative p-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-full transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 flex h-4 w-4 items-center justify-center rounded-full bg-error font-label-sm text-[10px] text-on-error font-bold">2</span></button><div class="flex items-center gap-space-sm pl-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-on-primary"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="hidden lg:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface font-semibold truncate leading-tight">Karimov Anvar M.</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate leading-tight">Yunusobod Tuman XTB Mudiri</span></div><button class="p-1.5 text-on-surface-variant hover:text-error hover:bg-surface-container-high rounded-lg transition-colors ml-1" title="Tizimdan chiqish" type="button"><span class="material-symbols-outlined text-[20px]">logout</span></button></div></div></header><main class="w-full pt-16 px-margin py-margin bg-background min-h-screen"><div class="flex flex-col w-full relative">
+<!-- Top Breadcrumb & Page Meta -->
+<div class="flex flex-col gap-space-xs mb-space-lg">
+<nav class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm tracking-wide">
+<a class="hover:text-primary transition-colors" href="#">Bosh sahifa</a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<a class="hover:text-primary transition-colors" href="#">Toshkent shahri</a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<a class="hover:text-primary transition-colors" href="#">Yunusobod tumani</a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-primary font-semibold">Maktablar boshqaruvi</span>
+</nav>
+<div class="flex flex-col xl:flex-row xl:items-center justify-between gap-space-md pt-space-xs">
+<div class="flex flex-col max-w-4xl">
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">
+          Yunusobod Tumani Maktabgacha va Maktab Taʼlimi Boʻlimi — Maktablar Nazorati
+        </h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+          Tuman boʻyicha 42 ta umumtaʼlim maktabi, 63,480 nafar oʻquvchi va Python Face ID biometrik turniket integratsiyalari nazorat markazi.
+        </p>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm">
+<div class="flex items-center gap-space-xs px-3 py-2 bg-surface-container-low rounded-lg text-secondary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px]">sync</span>
+<span class="font-semibold">Google Sheets Jonli Sinxronlash (Faol)</span>
+</div>
+<button class="px-space-md py-2 bg-surface-container-lowest text-primary font-label-md text-label-md rounded-lg shadow-sm hover:bg-surface-container-low transition-colors flex items-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-[18px]">file_download</span>
+<span>Eksport (Excel/PDF)</span>
+</button>
+<button class="px-space-md py-2 bg-primary text-on-primary font-label-md text-label-md rounded-lg shadow-md hover:bg-primary-container transition-all flex items-center gap-space-xs" id="openAddSchoolBtn" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>+ Yangi maktab qoʻshish</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Key Metrics Row -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-gutter mb-space-xl">
+<!-- Metric 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-5 shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Maktablar va muassasalar</span>
+<div class="font-headline-xl text-headline-xl text-primary mt-2">42 ta</div>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">account_balance</span>
+</div>
+</div>
+<div class="mt-4 pt-3 flex flex-col gap-1.5 bg-surface-container-lowest">
+<span class="font-body-sm text-body-sm text-on-surface-variant">38 ta umumtaʼlim, 4 ta ixtisoslashgan</span>
+<div class="flex items-center gap-1.5 text-label-sm font-label-sm text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded w-fit">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+<span>100% integratsiya qilingan</span>
+</div>
+</div>
+</div>
+<!-- Metric 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-5 shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Jami oʻquvchilar kontingenti</span>
+<div class="font-headline-xl text-headline-xl text-primary mt-2">63,480 nafar</div>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[22px]">groups</span>
+</div>
+</div>
+<div class="mt-4 pt-3 flex flex-col gap-1.5">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Face ID bazasida: <strong class="text-on-surface">62,110 (97.8%)</strong></span>
+<div class="flex items-center gap-1.5 text-label-sm font-label-sm text-emerald-700">
+<span class="material-symbols-outlined text-[16px]">trending_up</span>
+<span>+1.4% oʻtgan haftaga nisbatan</span>
+</div>
+</div>
+</div>
+<!-- Metric 3 -->
+<div class="bg-surface-container-lowest rounded-xl p-5 shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Bugungi umumiy davomat</span>
+<div class="font-headline-xl text-headline-xl text-primary mt-2">96.2%</div>
+</div>
+<span class="px-2.5 py-1 bg-emerald-50 text-emerald-800 rounded font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span> Aʼlo daraja
+        </span>
+</div>
+<div class="mt-4 pt-3 flex flex-col gap-2">
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden flex">
+<div class="bg-emerald-600 h-full" style="width: 96.2%"></div>
+<div class="bg-amber-500 h-full" style="width: 1.6%"></div>
+<div class="bg-error h-full" style="width: 2.2%"></div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Keldi: <strong class="text-on-surface font-code-sm">61,068</strong></span>
+<span>Kechikdi: <strong class="text-on-surface font-code-sm">1,042</strong></span>
+<span>Kelmadi: <strong class="text-on-surface font-code-sm">1,370</strong></span>
+</div>
+</div>
+</div>
+<!-- Metric 4 -->
+<div class="bg-surface-container-lowest rounded-xl p-5 shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Faol Face ID qurilmalari</span>
+<div class="font-headline-xl text-headline-xl text-primary mt-2">168 / 172 ta</div>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">center_focus_strong</span>
+</div>
+</div>
+<div class="mt-4 pt-3 flex flex-col gap-1.5">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Turniket datchiklari va AI kameralar</span>
+<div class="flex items-center justify-between text-label-sm font-label-sm">
+<span class="text-emerald-700 font-medium">97.7% online</span>
+<span class="text-error font-medium flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-error animate-ping"></span> 4 ta aloqada emas
+          </span>
+</div>
+</div>
+</div>
+</div>
+<!-- Schools Registry Table Card -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<!-- Filter and Search Toolbar -->
+<div class="p-space-md bg-surface-container-lowest flex flex-col lg:flex-row gap-space-md lg:items-center justify-between">
+<div class="relative flex-1 max-w-lg">
+<div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px]">search</span>
+</div>
+<input class="w-full pl-9 pr-4 py-2 bg-surface-container-low text-on-surface placeholder-on-surface-variant font-body-sm text-body-sm rounded-lg focus:outline-none focus:bg-surface-container-lowest shadow-inner" placeholder="Maktab raqami yoki direktor F.I.SH. boʻyicha qidiruv..." type="text"/>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm">
+<div class="flex items-center gap-1 bg-surface-container-low px-3 py-2 rounded-lg text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+<select class="bg-transparent text-on-surface font-label-md text-label-md focus:outline-none cursor-pointer">
+<option>Sinflar: Barchasi (1-11)</option>
+<option>Boshlangʻich (1-4 sinf)</option>
+<option>Katta sinflar (5-11 sinf)</option>
+</select>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-low px-3 py-2 rounded-lg text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px]">center_focus_weak</span>
+<select class="bg-transparent text-on-surface font-label-md text-label-md focus:outline-none cursor-pointer">
+<option>Face ID holati: Barchasi</option>
+<option>Faqat Online</option>
+<option>Aloqa uzilganlar (Diqqat)</option>
+</select>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-low px-3 py-2 rounded-lg text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px]">table_chart</span>
+<select class="bg-transparent text-on-surface font-label-md text-label-md focus:outline-none cursor-pointer">
+<option>Sheets holati: Barchasi</option>
+<option>Sinxronlangan</option>
+<option>Kutilmoqda / Xatolik</option>
+</select>
+</div>
+</div>
+</div>
+<!-- Data Table -->
+<div class="overflow-x-auto">
+<table class="w-full text-left">
+<thead class="bg-surface-container-low text-primary font-label-sm text-label-sm uppercase tracking-wider">
+<tr>
+<th class="py-3 px-space-md">Maktab raqami va nomi</th>
+<th class="py-3 px-space-md">Masʼul direktor</th>
+<th class="py-3 px-space-md">Oʻquvchilar</th>
+<th class="py-3 px-space-md">Bugungi davomat</th>
+<th class="py-3 px-space-md">Face ID holati</th>
+<th class="py-3 px-space-md">Sheets sinxronlash</th>
+<th class="py-3 px-space-md text-right">Amallar</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 text-on-surface font-body-sm text-body-sm">
+<!-- Row 1: 244-maktab -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3 px-space-md">
+<div class="flex items-center gap- space-sm">
+<span class="font-code-sm text-code-sm bg-surface-container px-2 py-1 rounded text-primary font-semibold mr-2">SCH-YUN-244</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-[14px] text-primary font-semibold">244-sonli umumtaʼlim maktabi</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant">Yunusobod 14-mavze, 22-uy</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-primary font-semibold text-xs overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Official portrait photograph of school principal Ergashev Baxtiyor Qodirovich wearing institutional suit in academic office setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKtTpgbY7E9ko2t3VxdfZCxn7RL66iXoXOnPYxYnuVychHGYWvekTctddyx0Ml8sZ2VgjNYpBfrUc41bhS88rTZKrcvUWqr5GYr_L85AVUIWQ0ReOSr54KVM_5flS-koDe8yJEXg2QFW0jWg6XMYh8OwACm0_sQnkbOswu5IpUvoBXiECOt6bfsAJ5PhNU0TP23RkLvQdsxz-dWnqGvZYjq1A_mGb6e6-Tip-f7N_mJOuVVJ_INhrepQ"/>
+</div>
+<div class="flex flex-col">
+<span class="font-medium text-on-surface leading-tight">Ergashev Baxtiyor Qodirovich</span>
+<span class="font-code-sm text-[11px] text-on-surface-variant">+998 90 123-45-67</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<div class="flex flex-col">
+<span class="font-semibold text-primary">1,420 nafar</span>
+<span class="text-on-surface-variant font-label-sm text-[11px]">42 ta sinf</span>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<div class="flex flex-col gap-1 w-32">
+<div class="flex items-center justify-between text-xs">
+<span class="font-semibold text-emerald-700">96.4%</span>
+<span class="text-on-surface-variant text-[11px]">1,369 keldi</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+<div class="bg-emerald-600 h-full rounded-full" style="width: 96.4%"></div>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2 py-1 rounded bg-emerald-50 text-emerald-700 font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-emerald-600"></span>
+<span>Ulangan (Online - 12s)</span>
+</span>
+</td>
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-1.5 text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-emerald-600">check_circle</span>
+<span>Sinxronlangan ✅</span>
+</div>
+</td>
+<td class="py-3 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="px-2.5 py-1 text-secondary bg-surface-container-low hover:bg-surface-container rounded font-label-sm text-label-sm flex items-center gap-1 transition-colors" type="button">
+<span>Boshqarish</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+<button class="p-1 text-on-surface-variant hover:text-on-surface rounded transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2: 17-maktab -->
+<tr class="hover:bg-surface-container-low/60 transition-colors bg-surface-container-lowest">
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="font-code-sm text-code-sm bg-surface-container px-2 py-1 rounded text-primary font-semibold mr-2">SCH-YUN-017</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-[14px] text-primary font-semibold">17-sonli umumtaʼlim maktabi</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant">Yunusobod 4-mavze, 1-uy</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-primary font-semibold text-xs overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Professional portrait photograph of female school director Karimova Dilnoza Sobirovna in smart educational attire with warm lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsgrhcY4Qa-msaFW5Pw3IFnvwCXnKSh811sr8PUB8aDY4PNwgXmeOpK3FpXY8GK3hA_1o_FJCxZEGz1X_2YmkMQVKq-gy1TrUV8-lbHsu6vzWzfnSrC-stvRDaUyRnJU-c07wEE_WVd70IHeUKLwdrUsu1LavDfwpU3WcITuHzyF5v4AWiXpGJORVLF0mE19H_dI-SMIueKE4Sqkb5kTH4ctinbxfYgmFCIbfHdHvj1ccEqEh7wQbTgw"/>
+</div>
+<div class="flex flex-col">
+<span class="font-medium text-on-surface leading-tight">Karimova Dilnoza Sobirovna</span>
+<span class="font-code-sm text-[11px] text-on-surface-variant">+998 93 456-11-22</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<div class="flex flex-col">
+<span class="font-semibold text-primary">1,850 nafar</span>
+<span class="text-on-surface-variant font-label-sm text-[11px]">54 ta sinf</span>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<div class="flex flex-col gap-1 w-32">
+<div class="flex items-center justify-between text-xs">
+<span class="font-semibold text-emerald-700">97.8%</span>
+<span class="text-on-surface-variant text-[11px]">1,809 keldi</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+<div class="bg-emerald-600 h-full rounded-full" style="width: 97.8%"></div>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2 py-1 rounded bg-emerald-50 text-emerald-700 font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-emerald-600"></span>
+<span>Ulangan (Online - 5s)</span>
+</span>
+</td>
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-1.5 text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-emerald-600">check_circle</span>
+<span>Sinxronlangan ✅</span>
+</div>
+</td>
+<td class="py-3 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="px-2.5 py-1 text-secondary bg-surface-container-low hover:bg-surface-container rounded font-label-sm text-label-sm flex items-center gap-1 transition-colors" type="button">
+<span>Boshqarish</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+<button class="p-1 text-on-surface-variant hover:text-on-surface rounded transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3: 5-maktab -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="font-code-sm text-code-sm bg-surface-container px-2 py-1 rounded text-primary font-semibold mr-2">SCH-YUN-005</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-[14px] text-primary font-semibold">5-sonli umumtaʼlim maktabi</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant">Yunusobod Markaziy koʻcha, 7</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-primary font-semibold text-xs overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Portrait photograph of educator Mirzayev Shuhrat Olimovich smiling confidently with soft library backdrop." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIlY1al0OOmtr68kFkoPQUDOA-9ZuHYDlIZyzxXheTCPbjFu6I8ZIovzbFXrW1fEwFn6tygDefglL-93qyaNt5xWVufGZF_IQmaWlTvFgKAv9ZexppCN0Ne41qLAZAt5c1uDQt8JuXzP9iibGM7oYn0RHnkq9ZfTWqdoMCXOneJpAabeX3ZJL9y-AaldUSmurWD3GZsqy_iEGpV78rh_EFz9mzIAM96Bx2M49uFmMJg3F7uIWkJbAfvA"/>
+</div>
+<div class="flex flex-col">
+<span class="font-medium text-on-surface leading-tight">Mirzayev Shuhrat Olimovich</span>
+<span class="font-code-sm text-[11px] text-on-surface-variant">+998 97 712-34-89</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<div class="flex flex-col">
+<span class="font-semibold text-primary">1,120 nafar</span>
+<span class="text-on-surface-variant font-label-sm text-[11px]">34 ta sinf</span>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<div class="flex flex-col gap-1 w-32">
+<div class="flex items-center justify-between text-xs">
+<span class="font-semibold text-emerald-700">94.2%</span>
+<span class="text-on-surface-variant text-[11px]">1,055 keldi</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+<div class="bg-emerald-600 h-full rounded-full" style="width: 94.2%"></div>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2 py-1 rounded bg-emerald-50 text-emerald-700 font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-emerald-600"></span>
+<span>Ulangan (Online - 45s)</span>
+</span>
+</td>
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-1.5 text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-emerald-600">check_circle</span>
+<span>Sinxronlangan ✅</span>
+</div>
+</td>
+<td class="py-3 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="px-2.5 py-1 text-secondary bg-surface-container-low hover:bg-surface-container rounded font-label-sm text-label-sm flex items-center gap-1 transition-colors" type="button">
+<span>Boshqarish</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+<button class="p-1 text-on-surface-variant hover:text-on-surface rounded transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4: 260-maktab -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="font-code-sm text-code-sm bg-surface-container px-2 py-1 rounded text-primary font-semibold mr-2">SCH-YUN-260</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-[14px] text-primary font-semibold">260-sonli umumtaʼlim maktabi</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant">Yunusobod 19-mavze, 45-a</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-primary font-semibold text-xs overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Headshot of school administrator Umarova Nargiza R. against a modern classroom background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsO25UmElSujhsMTCPVjXgUe0b9UtVvulAFrftJPy09JLPoYIKU5chlkssfh2AbCK6EgykX0TviOC81TveUKeiZYKhScsf5NGxTghNfgMZyzUDSHuRT355eImQMyWlymTkva1CFlqvaSt_Qggtzn8FWKMseHNICS4txmeFid_JRFR3fHOkkZROyn8bcoYP4VVBpNRUHcLlRnCECftM3BSAgne9lOk01Vs3WzHXNrvXvkJVmygyBkb_aQ"/>
+</div>
+<div class="flex flex-col">
+<span class="font-medium text-on-surface leading-tight">Umarova Nargiza R.</span>
+<span class="font-code-sm text-[11px] text-on-surface-variant">+998 90 999-88-77</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<div class="flex flex-col">
+<span class="font-semibold text-primary">1,600 nafar</span>
+<span class="text-on-surface-variant font-label-sm text-[11px]">48 ta sinf</span>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<div class="flex flex-col gap-1 w-32">
+<div class="flex items-center justify-between text-xs">
+<span class="font-semibold text-emerald-700">95.1%</span>
+<span class="text-on-surface-variant text-[11px]">1,521 keldi</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+<div class="bg-emerald-600 h-full rounded-full" style="width: 95.1%"></div>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2 py-1 rounded bg-emerald-50 text-emerald-700 font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-emerald-600"></span>
+<span>Ulangan (Online - 1m)</span>
+</span>
+</td>
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-1.5 text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-emerald-600">check_circle</span>
+<span>Sinxronlangan ✅</span>
+</div>
+</td>
+<td class="py-3 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="px-2.5 py-1 text-secondary bg-surface-container-low hover:bg-surface-container rounded font-label-sm text-label-sm flex items-center gap-1 transition-colors" type="button">
+<span>Boshqarish</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+<button class="p-1 text-on-surface-variant hover:text-on-surface rounded transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 5: 86-maktab (Issue row) -->
+<tr class="hover:bg-surface-container-low/60 transition-colors bg-error-container/10">
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="font-code-sm text-code-sm bg-error-container text-on-error-container px-2 py-1 rounded font-semibold mr-2">SCH-YUN-086</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-[14px] text-primary font-semibold">86-sonli umumtaʼlim maktabi</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant">Yunusobod 12-mavze, 8-uy</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-primary font-semibold text-xs overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Portrait photograph of director Toshmatov Alisher in front of high school administration corridor." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB__e_i1IPsV9XXmkhzN-tjzZjjhCNHb41ZjS_8R4ccct9MebXP2dPsOuBE89TS7h2PQCJ_h_NBO6gVvcYrgGpwkkCNY6FnUYqJolUx5-IB2GAQxhdfreuedDIChcvvC68FrVL1TdFyaRb3XsgMTPug_4IGmebe7LVyQmK_fHsyMYzd-PzUHTMGU-Eb8JJd6que7GYbf7pROdtYTBTOi2EygO6NJnWiNKrOFi7pC_oCTz35ezcubAnfyw"/>
+</div>
+<div class="flex flex-col">
+<span class="font-medium text-on-surface leading-tight">Toshmatov Alisher</span>
+<span class="font-code-sm text-[11px] text-on-surface-variant">+998 94 333-21-12</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<div class="flex flex-col">
+<span class="font-semibold text-primary">980 nafar</span>
+<span class="text-on-surface-variant font-label-sm text-[11px]">30 ta sinf</span>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<div class="flex flex-col gap-1 w-32">
+<div class="flex items-center justify-between text-xs">
+<span class="font-semibold text-amber-700">88.5%</span>
+<span class="text-on-surface-variant text-[11px]">867 keldi</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+<div class="bg-amber-500 h-full rounded-full" style="width: 88.5%"></div>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2 py-1 rounded bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-error animate-ping"></span>
+<span>Uzilgan (14 daq) 🔴</span>
+</span>
+</td>
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-1.5 text-error font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[16px]">warning</span>
+<span>Xatolik (Qayta urining) ⚠️</span>
+</div>
+</td>
+<td class="py-3 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="px-2.5 py-1 text-error bg-error-container/40 hover:bg-error-container rounded font-label-sm text-label-sm flex items-center gap-1 transition-colors" type="button">
+<span>Diagnostika</span>
+<span class="material-symbols-outlined text-[14px]">troubleshoot</span>
+</button>
+<button class="p-1 text-on-surface-variant hover:text-on-surface rounded transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Footer / Pagination -->
+<div class="p-space-md bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-space-sm text-on-surface-variant font-label-md text-label-md">
+<div>Jami 42 ta maktabdan 1 - 5 koʻrsatilmoqda</div>
+<div class="flex items-center gap-1">
+<button class="p-1.5 rounded hover:bg-surface-container text-on-surface-variant disabled:opacity-40" disabled="">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<button class="w-7 h-7 rounded bg-primary text-on-primary font-semibold text-xs flex items-center justify-center shadow-sm">1</button>
+<button class="w-7 h-7 rounded hover:bg-surface-container text-xs flex items-center justify-center">2</button>
+<button class="w-7 h-7 rounded hover:bg-surface-container text-xs flex items-center justify-center">3</button>
+<span class="px-1 text-xs">...</span>
+<button class="w-7 h-7 rounded hover:bg-surface-container text-xs flex items-center justify-center">9</button>
+<button class="p-1.5 rounded hover:bg-surface-container text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- CENTERED INTERACTIVE MODAL OVERLAY: "Yangi Maktab Qoʻshish" -->
+<div class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/60 backdrop-blur-sm overflow-y-auto" id="addSchoolModal">
+<div class="bg-surface-container-lowest w-full max-w-3xl rounded-xl shadow-2xl overflow-hidden flex flex-col my-8 animate-in fade-in zoom-in-95 duration-200">
+<!-- Modal Header -->
+<div class="px-space-xl py-space-md bg-surface-container-low flex items-start justify-between">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<h2 class="font-headline-md text-headline-md text-primary tracking-tight">Yangi maktab qoʻshish va boshqaruv tizimini yaratish</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+            Yunusobod tumani xalq taʼlimi boʻlimi tasarrufiga yangi umumtaʼlim muassasasini kiritish
+          </p>
+</div>
+<button class="p-1 text-on-surface-variant hover:text-on-surface hover:bg-surface-container rounded-lg transition-colors" id="closeModalX" type="button">
+<span class="material-symbols-outlined text-[24px]">close</span>
+</button>
+</div>
+<!-- Step Indicator Bar -->
+<div class="px-space-xl py-2.5 bg-surface-container-lowest flex items-center gap-space-lg text-label-md font-label-md">
+<div class="flex items-center gap-2 text-primary font-semibold">
+<span class="w-5 h-5 rounded-full bg-primary text-on-primary text-[11px] flex items-center justify-center">1</span>
+<span>1-qadam: Muassasa maʼlumotlari (Faol)</span>
+</div>
+<span class="text-on-surface-variant opacity-40">/</span>
+<div class="flex items-center gap-2 text-on-surface-variant opacity-70">
+<span class="w-5 h-5 rounded-full bg-surface-container-high text-on-surface-variant text-[11px] flex items-center justify-center">2</span>
+<span>2-qadam: API Kaliti taqdimoti</span>
+</div>
+</div>
+<!-- Modal Body Form -->
+<div class="p-space-xl space-y-space-lg max-h-[70vh] overflow-y-auto">
+<!-- Row 1: Maktab raqami & System ID -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold flex items-center justify-between" for="schoolNumberInput">
+<span>Maktab raqami <span class="text-error">*</span></span>
+<span class="text-[11px] text-on-surface-variant font-normal">Faqat raqam kiriting</span>
+</label>
+<div class="relative">
+<input class="w-full px-3 py-2 bg-surface-container-low text-on-surface rounded-lg font-headline-sm text-headline-sm focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary transition-all" id="schoolNumberInput" type="text" value="245"/>
+</div>
+<!-- Live Validation Badges -->
+<div class="flex items-center gap-1.5 text-emerald-800 bg-emerald-50 px-2.5 py-1 rounded text-label-sm font-label-sm mt-0.5" id="validationSuccess">
+<span class="material-symbols-outlined text-[16px] text-emerald-600">check_circle</span>
+<span class="font-medium">✓ Ushbu maktab raqami boʻsh (Band emas)</span>
+</div>
+<div class="hidden flex items-center gap-1.5 text-on-error-container bg-error-container px-2.5 py-1 rounded text-label-sm font-label-sm mt-0.5" id="validationError">
+<span class="material-symbols-outlined text-[16px] text-error">cancel</span>
+<span class="font-medium">❌ Bu maktab raqami tizimda allaqachon mavjud!</span>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold flex items-center justify-between">
+<span>Tizim identifikatori (ID)</span>
+<span class="text-[11px] text-secondary font-mono">Avtomatik</span>
+</label>
+<div class="flex items-center justify-between px-3.5 py-2.5 bg-surface-container-high rounded-lg">
+<span class="font-code-sm text-body-lg font-bold text-primary tracking-wide" id="previewId">SCH-YUN-245</span>
+<span class="material-symbols-outlined text-[18px] text-secondary">verified</span>
+</div>
+<p class="font-label-sm text-[11px] text-on-surface-variant">
+              Qayd: Agar <span class="font-code-sm text-error">244</span> kiritilsa, qizil xatolik va bandlik tekshiruvi ishga tushadi.
+            </p>
+</div>
+</div>
+<!-- Row 2: Maktab rasmiy nomi -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold" for="schoolNameInput">
+            Maktab rasmiy toʻliq nomi <span class="text-error">*</span>
+</label>
+<input class="w-full px-3 py-2 bg-surface-container-low text-on-surface rounded-lg font-body-md text-body-md focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary transition-all" id="schoolNameInput" type="text" value="245-sonli ixtisoslashtirilgan umumtaʼlim maktabi"/>
+</div>
+<!-- Row 3: Mas'ul direktor ma'lumotlari & Rasm yuklash -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+<div class="flex flex-col gap-3">
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface font-semibold">
+                Masʼul direktor F.I.SH. <span class="text-error">*</span>
+</label>
+<input class="w-full px-3 py-2 bg-surface-container-low text-on-surface rounded-lg font-body-md text-body-md focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary" type="text" value="Saidov Jasur Akramovich"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface font-semibold">
+                Aloqa telefon raqami <span class="text-error">*</span>
+</label>
+<input class="w-full px-3 py-2 bg-surface-container-low text-on-surface rounded-lg font-code-sm text-body-md focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary" type="text" value="+998 90 987-65-43"/>
+</div>
+</div>
+<!-- Drag and Drop Box for Photo -->
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Direktor fotosurati (Face ID identifikatsiya uchun)</label>
+<div class="h-[120px] bg-surface-container-low hover:bg-surface-container rounded-lg p-3 flex flex-col items-center justify-center text-center cursor-pointer transition-colors group">
+<div class="w-8 h-8 rounded-full bg-surface-container-high group-hover:scale-110 flex items-center justify-center text-secondary mb-1 transition-transform">
+<span class="material-symbols-outlined text-[20px]">photo_camera</span>
+</div>
+<span class="font-label-md text-label-md text-primary font-medium">Rasm yuklang (JPG/PNG, max 5MB)</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant">yoki faylni shu yerga sudrab keltiring</span>
+</div>
+</div>
+</div>
+<!-- Row 4: Maktab administratori kirish ma'lumotlari -->
+<div class="p-space-md bg-surface-container-low rounded-xl flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-primary font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-secondary">admin_panel_settings</span>
+              Maktab boshqaruvchi administratori hisobi (Kiosk &amp; Dashboard)
+            </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Avtomatik profil</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Tavsiya etilgan login:</span>
+<div class="flex items-center justify-between bg-surface-container-lowest px-3 py-2 rounded-lg shadow-sm">
+<span class="font-code-sm text-code-sm text-primary font-bold" id="previewLogin">maktab245_admin</span>
+<button class="text-on-surface-variant hover:text-secondary text-xs flex items-center gap-0.5" title="Loginni nusxalash" type="button">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Dastlabki xavfsiz parol:</span>
+<button class="text-secondary font-label-sm text-[11px] font-semibold flex items-center gap-0.5 hover:underline" id="regenPassBtn" type="button">
+<span class="material-symbols-outlined text-[14px]">bolt</span>
+                  ⚡ Generatsiya
+                </button>
+</div>
+<div class="flex items-center justify-between bg-surface-container-lowest px-3 py-2 rounded-lg shadow-sm">
+<span class="font-code-sm text-code-sm text-primary font-bold tracking-widest" id="passwordDisplay">••••••••••••</span>
+<button class="text-on-surface-variant hover:text-secondary text-xs flex items-center gap-1" id="togglePassBtn" type="button">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+<span class="text-[11px]">Koʻrsatish</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Row 5: Google Sheets Notice Box -->
+<div class="p-space-md bg-secondary-container/20 rounded-xl flex items-start gap-space-sm text-secondary">
+<span class="material-symbols-outlined text-[24px] text-secondary flex-shrink-0 mt-0.5">table_chart</span>
+<div class="flex flex-col text-on-surface">
+<span class="font-headline-sm text-[13px] text-primary font-bold">Google Sheets va Drive integratsiyasi:</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+              Maktab saqlanishi bilanoq <strong class="text-primary font-code-sm">"Yunusobod_Maktab_245_Davomat_2025"</strong> nomli maxsus sinxronizatsiya jadvali Google Drive bulutida avtomatik ravishda yaratiladi va Face ID serveriga biriktiriladi.
+            </p>
+</div>
+</div>
+<!-- Row 6: Security Notice Banner -->
+<div class="p-space-md bg-amber-50 rounded-xl flex items-start gap-space-sm text-amber-900">
+<span class="material-symbols-outlined text-[24px] text-amber-600 flex-shrink-0 mt-0.5">security</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-amber-950">⚠️ Xavfsizlik koʻrsatmasi:</span>
+<p class="font-body-sm text-body-sm text-amber-900/90 mt-0.5">
+              Maktab saqlangandan soʻng, Python Face ID turniket dasturi uchun unikal API kalit generatsiya qilinadi va u faqat bir marta toʻliq taqdim etiladi. Ushbu amal tizim xavfsizlik audit jurnalida qayd etiladi.
+            </p>
+</div>
+</div>
+</div>
+<!-- Modal Footer -->
+<div class="px-space-xl py-space-md bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-space-sm">
+<a class="text-secondary font-label-md text-label-md hover:underline flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[16px]">help</span>
+<span>Yordam va qoʻllanma</span>
+</a>
+<div class="flex items-center gap-space-sm w-full sm:w-auto justify-end">
+<button class="px-space-md py-2 bg-surface-container-lowest text-primary font-label-md text-label-md rounded-lg shadow-sm hover:bg-surface-container transition-colors" id="cancelModalBtn" type="button">
+            Bekor qilish
+          </button>
+<button class="px-space-lg py-2 bg-primary text-on-primary font-label-md text-label-md rounded-lg shadow-md hover:bg-primary-container transition-all flex items-center gap-space-xs font-semibold" id="submitSchoolBtn" type="button">
+<span class="material-symbols-outlined text-[18px]">key</span>
+<span>Maktabni saqlash va API kalit olish</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+    // Modal interactive logic
+    const modal = document.getElementById('addSchoolModal');
+    const openBtn = document.getElementById('openAddSchoolBtn');
+    const closeBtnX = document.getElementById('closeModalX');
+    const cancelBtn = document.getElementById('cancelModalBtn');
+    const submitBtn = document.getElementById('submitSchoolBtn');
+    const schoolNumberInput = document.getElementById('schoolNumberInput');
+    const previewId = document.getElementById('previewId');
+    const previewLogin = document.getElementById('previewLogin');
+    const validationSuccess = document.getElementById('validationSuccess');
+    const validationError = document.getElementById('validationError');
+    const togglePassBtn = document.getElementById('togglePassBtn');
+    const passwordDisplay = document.getElementById('passwordDisplay');
+    const regenPassBtn = document.getElementById('regenPassBtn');
+
+    let currentPass = "Yunus@2025!Secure";
+    let isPassRevealed = false;
+
+    // Open/Close
+    openBtn.addEventListener('click', () => {
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    });
+
+    const closeModal = () => {
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    };
+
+    closeBtnX.addEventListener('click', closeModal);
+    cancelBtn.addEventListener('click', closeModal);
+
+    // Number validation & dynamic reaction (Testing 244 conflict vs new numbers)
+    schoolNumberInput.addEventListener('input', (e) => {
+      const val = e.target.value.trim();
+      const paddedVal = val.padStart(3, '0');
+      previewId.textContent = `SCH-YUN-${val ? paddedVal : '000'}`;
+      previewLogin.textContent = `maktab${val || '000'}_admin`;
+
+      if (val === '244' || val === '17' || val === '5' || val === '260' || val === '86') {
+        validationError.classList.remove('hidden');
+        validationSuccess.classList.add('hidden');
+        submitBtn.disabled = true;
+        submitBtn.classList.add('opacity-50', 'cursor-not-allowed');
+      } else {
+        validationError.classList.add('hidden');
+        validationSuccess.classList.remove('hidden');
+        submitBtn.disabled = false;
+        submitBtn.classList.remove('opacity-50', 'cursor-not-allowed');
+      }
+    });
+
+    // Password view toggle
+    togglePassBtn.addEventListener('click', () => {
+      isPassRevealed = !isPassRevealed;
+      passwordDisplay.textContent = isPassRevealed ? currentPass : "••••••••••••";
+      togglePassBtn.querySelector('span:last-child').textContent = isPassRevealed ? "Yashirish" : "Koʻrsatish";
+    });
+
+    // Regenerate password
+    regenPassBtn.addEventListener('click', () => {
+      const chars = "ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnpqrstuvwxyz23456789!@#$%";
+      let result = "Yun#";
+      for (let i = 0; i < 8; i++) {
+        result += chars.charAt(Math.floor(Math.random() * chars.length));
+      }
+      currentPass = result;
+      if (isPassRevealed) {
+        passwordDisplay.textContent = currentPass;
+      }
+    });
+
+    // Save action preview feedback
+    submitBtn.addEventListener('click', () => {
+      const num = schoolNumberInput.value;
+      alert(`SCH-YUN-${num} maktabi muvaffaqiyatli saqlandi! Python Face ID Kiosk API kaliti generatsiya qilinmoqda...`);
+      closeModal();
+    });
+  </script>
+</div></main></div></body></html>

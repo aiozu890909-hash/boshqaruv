@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+
+<html lang="uz"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_blank" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-tertiary-fixed":"#2c1700","surface-dim":"#ccdbf3","on-error":"#ffffff","surface":"#f8f9ff","inverse-surface":"#233144","tertiary":"#371e00","background":"#f8f9ff","primary":"#00244b","on-primary-container":"#88a5d4","surface-container-high":"#dce9ff","on-background":"#0d1c2e","on-primary":"#ffffff","tertiary-fixed":"#ffdcbc","surface-container":"#e6eeff","primary-container":"#1b3a63","surface-container-highest":"#d5e3fc","inverse-on-surface":"#eaf1ff","error-container":"#ffdad6","tertiary-container":"#553100","secondary-container":"#8cc6ff","on-primary-fixed-variant":"#2a4771","surface-container-low":"#eff4ff","surface-variant":"#d5e3fc","on-secondary":"#ffffff","primary-fixed-dim":"#abc8f9","primary-fixed":"#d5e3ff","surface-bright":"#f8f9ff","on-surface-variant":"#43474e","on-tertiary-fixed-variant":"#683d00","on-surface":"#0d1c2e","secondary-fixed":"#cfe5ff","on-error-container":"#93000a","on-secondary-fixed-variant":"#004a77","on-tertiary-container":"#e09231","surface-container-lowest":"#ffffff","secondary-fixed-dim":"#98cbff","on-tertiary":"#ffffff","inverse-primary":"#abc8f9","surface-tint":"#435f8a","on-secondary-container":"#005284","error":"#ba1a1a","outline":"#74777f","on-primary-fixed":"#001b3c","on-secondary-fixed":"#001d33","outline-variant":"#c4c6d0","secondary":"#1e6296","tertiary-fixed-dim":"#ffb86a"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-sm":"0.5rem","space-xl":"1.75rem","space-lg":"1.25rem","margin":"1.75rem","space-xs":"0.25rem","gutter":"1.25rem","space-md":"0.875rem"},"fontFamily":{"body-md":["Inter"],"label-sm":["Inter"],"code-sm":["JetBrains Mono"],"headline-lg":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"body-sm":["Inter"],"headline-sm":["Plus Jakarta Sans"],"label-lg":["Inter"],"body-lg":["Inter"],"headline-xl":["Plus Jakarta Sans"],"label-md":["Inter"]},"fontSize":{"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.03em","fontWeight":"600"}],"code-sm":["12px",{"lineHeight":"16px","fontWeight":"500"}],"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-md":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}],"headline-sm":["16px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-xl":["30px",{"lineHeight":"38px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface h-screen w-screen overflow-hidden select-none"><main class="w-full h-full flex items-center justify-center bg-surface-container-low"><div class="flex flex-col w-full min-h-screen relative overflow-hidden bg-primary text-surface items-center justify-between p-6 select-none">
+<!-- Cybernetic Grid & Biometric Ambient Background Elements -->
+<div class="absolute inset-0 pointer-events-none opacity-20">
+<svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<pattern height="40" id="cyber-grid" patternunits="userSpaceOnUse" width="40">
+<path class="text-secondary-container" d="M 40 0 L 0 0 0 40" fill="none" stroke="currentColor" stroke-width="0.5"></path>
+<circle class="text-secondary-container" cx="0" cy="0" fill="currentColor" r="1"></circle>
+</pattern>
+<lineargradient cx="50%" cy="50%" id="radial-glow" r="50%">
+<stop offset="0%" stop-color="#8cc6ff" stop-opacity="0.15"></stop>
+<stop offset="100%" stop-color="#00244b" stop-opacity="0"></stop>
+</lineargradient>
+</defs>
+<rect fill="url(#cyber-grid)" height="100%" width="100%"></rect>
+<rect fill="url(#radial-glow)" height="100%" width="100%"></rect>
+</svg>
+</div>
+<!-- Decorative Corner HUD Elements -->
+<div class="absolute top-6 left-6 flex items-center space-x-3 pointer-events-none">
+<div class="w-2 h-2 rounded-full bg-secondary animate-ping"></div>
+<div class="flex flex-col">
+<span class="font-code-sm text-code-sm uppercase tracking-widest text-primary-fixed-dim">SYS.LOC // TERMINAL 01</span>
+<span class="font-code-sm text-label-sm text-outline-variant">STATUS: DISCONNECTED_LOCK</span>
+</div>
+</div>
+<div class="absolute top-6 right-6 flex items-center space-x-4 pointer-events-none">
+<div class="flex flex-col text-right">
+<span class="font-code-sm text-code-sm text-primary-fixed-dim" id="digitalClock">10:42:15 UZT</span>
+<span class="font-code-sm text-label-sm text-outline-variant">24 OKTYABR, 2024</span>
+</div>
+<div class="bg-primary-container p-2 rounded-xl text-primary-fixed">
+<span class="material-symbols-outlined text-headline-sm">wifi_tethering_error</span>
+</div>
+</div>
+<!-- Spacer for Optical Balance -->
+<div class="h-4"></div>
+<!-- Centered Prominent Activation Card -->
+<div class="relative w-full max-w-[620px] z-10 my-auto">
+<!-- Subtle Ambient Glow Behind Card -->
+<div class="absolute -inset-1.5 bg-gradient-to-r from-secondary/30 via-primary-container to-secondary/20 rounded-xl blur-lg opacity-40"></div>
+<div class="relative bg-primary-container/95 backdrop-blur-md rounded-xl shadow-2xl p-8 sm:p-10 flex flex-col space-y-6">
+<!-- Top Section: Institutional Emblem & Brand Title -->
+<div class="flex flex-col items-center text-center space-y-3">
+<div class="relative w-16 h-16 rounded-full bg-surface-container-low/10 flex items-center justify-center p-3 shadow-inner">
+<div class="absolute inset-0 rounded-full border border-secondary-container/30"></div>
+<span class="material-symbols-outlined text-secondary-container text-[36px]" style="font-variation-settings: 'FILL' 1;">assured_workload</span>
+</div>
+<div class="space-y-1">
+<div class="inline-flex items-center space-x-2 px-2.5 py-0.5 rounded-full bg-secondary/20 text-secondary-fixed text-label-sm font-label-sm uppercase tracking-wider">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-container"></span>
+<span>Biometrik Autentifikatsiya</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-surface-container-lowest font-bold tracking-tight">
+            Yagona Taʼlim — Face ID Kiosk
+          </h1>
+<p class="font-body-sm text-body-sm text-primary-fixed-dim max-w-md mx-auto">
+            Maktab biometrik turniket va real-vaqt davomat tizimini markaziy serverga ulash va faollashtirish
+          </p>
+</div>
+</div>
+<!-- Main Form Section -->
+<div class="flex flex-col space-y-4 pt-2">
+<!-- Input Header & Tooltip -->
+<div class="flex items-center justify-between">
+<label class="font-label-lg text-label-lg text-surface-bright flex items-center space-x-1.5" for="apiKeyField">
+<span>Maktab API Maxfiy Kaliti (API Key)</span>
+<span class="text-error font-bold">*</span>
+</label>
+<div class="group relative flex items-center cursor-pointer text-primary-fixed-dim hover:text-secondary-fixed">
+<span class="material-symbols-outlined text-[18px]">help</span>
+<!-- Help Tooltip -->
+<div class="absolute right-0 bottom-full mb-2 hidden group-hover:flex flex-col w-64 p-2.5 bg-inverse-surface text-inverse-on-surface text-label-sm font-label-sm rounded-lg shadow-xl z-20 pointer-events-none">
+<span>Ushbu kalit Tuman XTB yoki Tizim Bosh administratori tomonidan taqdim etiladi.</span>
+<div class="w-2 h-2 bg-inverse-surface transform rotate-45 self-end -mb-3.5 mr-2"></div>
+</div>
+</div>
+</div>
+<!-- Key Input Container with Monospace & Action Toggles -->
+<div class="relative flex items-center">
+<div class="absolute left-3.5 text-primary-fixed-dim pointer-events-none flex items-center">
+<span class="material-symbols-outlined text-[20px]">key</span>
+</div>
+<input class="w-full bg-primary/70 text-surface-bright font-code-sm text-code-sm pl-11 pr-24 py-3 rounded-lg placeholder-outline focus:outline-none focus:bg-primary transition-all duration-200" id="apiKeyField" placeholder="mkt_••••••••_sec_••••••••••••" type="password" value="mkt_8f3a9e21_sec_994827104b2a"/>
+<div class="absolute right-2 flex items-center space-x-1">
+<button class="p-1.5 rounded-lg text-primary-fixed-dim hover:text-surface-bright hover:bg-surface-variant/20 transition-colors" id="toggleKeyVisibility" title="Koʻrsatish / Yashirish" type="button">
+<span class="material-symbols-outlined text-[19px]" id="visibilityIcon">visibility_off</span>
+</button>
+<button class="p-1.5 rounded-lg text-primary-fixed-dim hover:text-secondary-fixed hover:bg-surface-variant/20 transition-colors" id="pasteKeyBtn" title="Vaqtinchalik xotiradan qoʻyish" type="button">
+<span class="material-symbols-outlined text-[19px]">content_paste</span>
+</button>
+</div>
+</div>
+<!-- Error State Alert Box -->
+<div class="flex items-start space-x-3 p-3.5 rounded-lg bg-error-container/20 text-on-error-container text-body-sm font-body-sm shadow-sm">
+<span class="material-symbols-outlined text-error text-[20px] shrink-0 mt-0.5" style="font-variation-settings: 'FILL' 1;">error</span>
+<div class="flex flex-col space-y-0.5">
+<span class="font-label-md text-label-md text-error uppercase tracking-wider font-semibold">Autentifikatsiya xatosi</span>
+<p class="leading-snug text-surface-bright/90">
+              Kalit notoʻgʻri yoki muddati oʻtgan. Odamlar roʻyxati yuklanmadi. Iltimos, maktab administratori bilan bogʻlaning.
+            </p>
+</div>
+</div>
+<!-- Submit / Activation Action Button -->
+<button class="group relative w-full py-3.5 px-6 rounded-lg bg-secondary hover:bg-secondary/90 active:bg-secondary/80 text-on-secondary font-label-lg text-label-lg flex items-center justify-center space-x-3 shadow-lg hover:shadow-secondary/20 transition-all duration-200 cursor-pointer overflow-hidden" id="btnActivate" type="button">
+<div class="absolute inset-0 w-1/2 h-full bg-gradient-to-r from-transparent via-white/10 to-transparent skew-x-12 -translate-x-full group-hover:translate-x-[300%] transition-transform duration-1000 ease-out"></div>
+<span class="material-symbols-outlined text-[22px] transition-transform duration-300 group-hover:scale-110" id="btnIcon">fingerprint</span>
+<span id="btnText">Tekshirish va ishga tushirish</span>
+<div class="hidden w-5 h-5 rounded-full border-2 border-surface/30 border-t-surface animate-spin" id="btnSpinner"></div>
+</button>
+<!-- Secondary Offline & Diagnostics Link -->
+<div class="flex items-center justify-center pt-1">
+<button class="group inline-flex items-center space-x-1.5 text-secondary-fixed text-label-md font-label-md hover:text-secondary-fixed-dim hover:underline transition-colors" onclick="openDiagnosticsModal()" type="button">
+<span class="material-symbols-outlined text-[16px] group-hover:rotate-45 transition-transform">build_circle</span>
+<span>Tizim diagnostikasi va Kamera tekshiruvi</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Card Sub-Module: Peripheral & Service Connections -->
+<div class="pt-4 mt-2 bg-primary/40 -mx-8 sm:-mx-10 -mb-8 sm:-mb-10 p-5 rounded-b-xl flex flex-col space-y-2.5">
+<div class="flex items-center justify-between text-label-sm font-label-sm text-outline-variant uppercase tracking-wider px-1">
+<span>Uskunalar holati (Hardware &amp; Net)</span>
+<span class="font-code-sm text-primary-fixed-dim">PORT: AUTO-BIND</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-2">
+<!-- Gateway Node -->
+<div class="flex items-center space-x-2 bg-primary-container/80 p-2.5 rounded-lg shadow-sm">
+<span class="w-2.5 h-2.5 rounded-full bg-[#10b981] shadow-[0_0_8px_#10b981] shrink-0"></span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-surface-bright truncate font-medium">FaceNet Gateway</span>
+<span class="font-code-sm text-[10px] text-primary-fixed-dim leading-none truncate">127.0.0.1:8080</span>
+</div>
+</div>
+<!-- Cloud API Node -->
+<div class="flex items-center space-x-2 bg-primary-container/80 p-2.5 rounded-lg shadow-sm">
+<span class="w-2.5 h-2.5 rounded-full bg-[#f59e0b] shadow-[0_0_8px_#f59e0b] shrink-0 animate-pulse"></span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-surface-bright truncate font-medium">Google Drive API</span>
+<span class="font-code-sm text-[10px] text-tertiary-fixed-dim leading-none truncate">Kalit kutilmoqda</span>
+</div>
+</div>
+<!-- Video Stream Node -->
+<div class="flex items-center space-x-2 bg-primary-container/80 p-2.5 rounded-lg shadow-sm">
+<span class="w-2.5 h-2.5 rounded-full bg-[#10b981] shadow-[0_0_8px_#10b981] shrink-0"></span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-surface-bright truncate font-medium">Kamera (USB)</span>
+<span class="font-code-sm text-[10px] text-primary-fixed-dim leading-none truncate">HD WebCam 1080p</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Operational Bottom Bar / Kiosk Identification -->
+<footer class="relative z-10 w-full flex flex-col sm:flex-row items-center justify-between text-outline-variant font-code-sm text-code-sm pt-6 px-2 space-y-2 sm:space-y-0">
+<div class="flex items-center space-x-2 text-center sm:text-left">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+<span>Yagona Taʼlim Avtomatlashtirilgan Tizimi v2.4-rt</span>
+<span class="text-surface-dim hidden md:inline">•</span>
+<span class="hidden md:inline">Oʻzbekiston Respublikasi Maktabgacha va maktab taʼlimi vazirligi</span>
+</div>
+<div class="flex items-center space-x-4 bg-primary-container/60 px-3 py-1 rounded-lg">
+<span class="text-primary-fixed-dim">KIOSK IDENTIFIKATORI:</span>
+<span class="text-surface-bright font-bold tracking-wider">KSK-245-GATE-01</span>
+</div>
+</footer>
+<!-- Embedded Diagnostics Mini Modal Overlay (Toggled via JS) -->
+<div class="fixed inset-0 z-50 hidden items-center justify-center bg-inverse-surface/80 backdrop-blur-sm p-4" id="diagnosticsModal">
+<div class="relative bg-primary-container w-full max-w-lg rounded-xl shadow-2xl p-6 flex flex-col space-y-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center space-x-2 text-surface-bright">
+<span class="material-symbols-outlined text-secondary-container">videocam</span>
+<h2 class="font-headline-sm text-headline-sm font-semibold">Kamera va Dasturiy Diagnostika</h2>
+</div>
+<button class="text-primary-fixed-dim hover:text-surface-bright p-1 rounded-lg" onclick="closeDiagnosticsModal()">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<!-- Test Camera Frame Mock -->
+<div class="relative w-full h-48 bg-primary rounded-lg overflow-hidden flex flex-col items-center justify-center">
+<!-- Target Frame HUD -->
+<div class="absolute inset-8 border border-dashed border-secondary-container/40 rounded-xl flex items-center justify-center">
+<span class="font-code-sm text-[11px] text-secondary-fixed/70 uppercase tracking-widest bg-primary/80 px-2 py-1 rounded">Face Track Box: Active</span>
+</div>
+<span class="material-symbols-outlined text-primary-fixed-dim text-headline-xl">person_outline</span>
+<div class="absolute bottom-2 left-2 bg-inverse-surface/80 px-2 py-0.5 rounded text-[10px] font-code-sm text-surface-bright">
+          FPS: 30.2 | 1920x1080@60Hz | UVC 2.0
+        </div>
+</div>
+<div class="space-y-2 text-body-sm font-body-sm text-primary-fixed-dim">
+<div class="flex justify-between py-1 bg-primary/30 px-3 rounded">
+<span>Turniket Relye signali (GPIO):</span>
+<span class="text-[#10b981] font-semibold">OK (Impuls tayyor)</span>
+</div>
+<div class="flex justify-between py-1 bg-primary/30 px-3 rounded">
+<span>Lokal Kesh xotirasi:</span>
+<span class="text-surface-bright font-semibold">124 MB (2,450 biometrik vektor)</span>
+</div>
+</div>
+<div class="pt-2 flex justify-end">
+<button class="px-4 py-2 bg-secondary text-on-secondary rounded-lg font-label-md text-label-md hover:bg-secondary/90 transition-colors" onclick="closeDiagnosticsModal()">
+          Yopish va qaytish
+        </button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Clock Updater
+  function updateTime() {
+    const el = document.getElementById('digitalClock');
+    if (el) {
+      const now = new Date();
+      el.textContent = now.toLocaleTimeString('uz-UZ', { hour12: false }) + ' UZT';
+    }
+  }
+  setInterval(updateTime, 1000);
+
+  // Key Visibility Toggle
+  const keyInput = document.getElementById('apiKeyField');
+  const toggleBtn = document.getElementById('toggleKeyVisibility');
+  const visIcon = document.getElementById('visibilityIcon');
+
+  if (toggleBtn && keyInput) {
+    toggleBtn.addEventListener('click', () => {
+      if (keyInput.type === 'password') {
+        keyInput.type = 'text';
+        visIcon.textContent = 'visibility';
+      } else {
+        keyInput.type = 'password';
+        visIcon.textContent = 'visibility_off';
+      }
+    });
+  }
+
+  // Paste Action
+  const pasteBtn = document.getElementById('pasteKeyBtn');
+  if (pasteBtn && keyInput) {
+    pasteBtn.addEventListener('click', async () => {
+      try {
+        const text = await navigator.clipboard.readText();
+        if (text) {
+          keyInput.value = text.trim();
+        }
+      } catch (e) {
+        // Fallback or prompt for clipboard permissions
+        keyInput.focus();
+      }
+    });
+  }
+
+  // Activation Button Loading State Simulation
+  const activateBtn = document.getElementById('btnActivate');
+  const btnSpinner = document.getElementById('btnSpinner');
+  const btnIcon = document.getElementById('btnIcon');
+  const btnText = document.getElementById('btnText');
+
+  if (activateBtn) {
+    activateBtn.addEventListener('click', () => {
+      btnIcon.classList.add('hidden');
+      btnSpinner.classList.remove('hidden');
+      btnText.textContent = 'Tekshirilmoqda va ulanmoqda...';
+      activateBtn.classList.add('pointer-events-none', 'opacity-90');
+
+      setTimeout(() => {
+        btnSpinner.classList.add('hidden');
+        btnIcon.classList.remove('hidden');
+        btnText.textContent = 'Tekshirish va ishga tushirish';
+        activateBtn.classList.remove('pointer-events-none', 'opacity-90');
+      }, 2200);
+    });
+  }
+
+  // Diagnostics Modal Helpers
+  function openDiagnosticsModal() {
+    const modal = document.getElementById('diagnosticsModal');
+    if (modal) {
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+  }
+
+  function closeDiagnosticsModal() {
+    const modal = document.getElementById('diagnosticsModal');
+    if (modal) {
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+  }
+</script></main></body></html>
