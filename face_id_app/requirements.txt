@@ -1,0 +1,6 @@
+deepface[tensorflow]
+tf-keras
+opencv-python
+numpy
+requests
+python-dotenv

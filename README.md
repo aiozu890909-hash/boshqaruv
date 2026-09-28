@@ -29,3 +29,21 @@ Batafsil: `docs/Yagona_Talim_Davomat_Tizimi.pdf`
 - [ ] Backend API (Node.js/FastAPI) — autentifikatsiya, API key boshqaruvi, Google Sheets/Drive integratsiyasi
 - [ ] Python Face ID xizmati (face_recognition/OpenCV + FastAPI)
 - [ ] `index.html`dagi statik prototipni real backend'ga ulash
+
+## Backend (Google Apps Script)
+
+- `backend/Code.gs` — Google Sheets + Drive ustida ishlaydigan backend. Ishlatishdan oldin `SUPER_ADMIN_LOGIN` / `SUPER_ADMIN_PAROL` ni o'zingiz belgilang (repoga haqiqiy parol yozmang).
+- `backend/YDT_Google_Sheets_Baza.xlsx` — Sheets varaqlari tuzilmasi namunasi.
+- Joriy web-ilova manzili (`/exec`):
+  `https://script.google.com/macros/s/AKfycbyi7QaRZME4mtbGInMPu3V-heXzbNm4yMopcwf1HOeWiv_oJ06QNFLxwYvQLBIJdNzu/exec`
+
+## Face ID ilovasi (Python)
+
+`face_id_app/` papkasida: `face_id_app.py`, `requirements.txt`, `.env.example` (`API_BASE_URL` shu yerda oldindan yozilgan).
+
+```bash
+cd face_id_app
+pip install -r requirements.txt
+cp .env.example .env    # keyin FACE_ID_API_KEY ni to'ldiring
+python face_id_app.py
+```
