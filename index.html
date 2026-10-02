@@ -2201,14 +2201,14 @@
   // --------------------------------------------------------------------
   // 1) LOGIN
   // --------------------------------------------------------------------
-  var loginForm = document.getElementById("loginForm");
+  var loginForm = document.getElementById("login__loginForm");
   if (loginForm) {
     loginForm.addEventListener("submit", async function (e) {
       e.preventDefault();
-      var loginInput = document.getElementById("loginInput");
-      var passInput = document.getElementById("passInput");
-      var errBox = document.getElementById("loginError");
-      var btn = document.getElementById("loginBtn");
+      var loginInput = document.getElementById("login__loginInput");
+      var passInput = document.getElementById("login__passInput");
+      var errBox = document.getElementById("login__loginError");
+      var btn = document.getElementById("login__loginBtn");
       var originalText = btn.textContent;
       btn.disabled = true; btn.textContent = "Tekshirilmoqda...";
 
