@@ -2181,10 +2181,31 @@
 
   function apiCall(action, data) {
     return new Promise(function (resolve) {
-      google.script.run
-        .withSuccessHandler(resolve)
-        .withFailureHandler(function (e) { resolve({ error: true, message: (e && e.message) || "Server bilan aloqa xatosi" }); })
-        .api(Object.assign({ action: action, token: token }, data || {}));
+      try {
+        if (typeof google === "undefined" || !google.script || !google.script.run) {
+          resolve({
+            error: true,
+            message: "google.script.run topilmadi. Sahifa Apps Script \"Deploy\" havolasi (/exec) orqali ochilishi kerak — faylni to'g'ridan-to'g'ri brauzerda ochish ishlamaydi."
+          });
+          return;
+        }
+        var settled = false;
+        var timer = setTimeout(function () {
+          if (settled) return;
+          settled = true;
+          resolve({ error: true, message: "Server 20 soniyada javob bermadi (timeout). Qayta urinib ko'ring." });
+        }, 20000);
+
+        google.script.run
+          .withSuccessHandler(function (r) { if (settled) return; settled = true; clearTimeout(timer); resolve(r); })
+          .withFailureHandler(function (e) {
+            if (settled) return; settled = true; clearTimeout(timer);
+            resolve({ error: true, message: (e && e.message) || "Server xatosi (failure handler)" });
+          })
+          .api(Object.assign({ action: action, token: token }, data || {}));
+      } catch (err) {
+        resolve({ error: true, message: "Mijoz tomonida xato: " + (err && err.message) });
+      }
     });
   }
 
