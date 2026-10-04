@@ -524,10 +524,10 @@
         copyStatusText.textContent = "Nusxa olish";
       }
 
-      if (btnOpen1) btnOpen1.addEventListener('click', showModal);
-      if (btnOpen2) btnOpen2.addEventListener('click', showModal);
-      if (btnGenerate) btnGenerate.addEventListener('click', showModal);
-      if (btnClose) btnClose.addEventListener('click', hideModal);
+      if (btnOpen1) btnOpen1.addEventListener('click', dashboard__showModal);
+      if (btnOpen2) btnOpen2.addEventListener('click', dashboard__showModal);
+      if (btnGenerate) btnGenerate.addEventListener('click', dashboard__showModal);
+      if (btnClose) btnClose.addEventListener('click', dashboard__hideModal);
 
       // Password masking toggle
       if (btnTogglePassword) {
@@ -556,12 +556,12 @@
         });
       }
 
-      if (btnCopyApiKey) btnCopyApiKey.addEventListener('click', copyKey);
+      if (btnCopyApiKey) btnCopyApiKey.addEventListener('click', dashboard__copyKey);
 
       if (btnCopyAndClose) {
         btnCopyAndClose.addEventListener('click', function() {
           dashboard__copyKey();
-          setTimeout(hideModal, 600);
+          setTimeout(dashboard__hideModal, 600);
         });
       }
 
@@ -1238,12 +1238,12 @@
       }
     }
 
-    if (closeBtn) closeBtn.addEventListener('click', closeModal);
-    if (closeHeaderBtn) closeHeaderBtn.addEventListener('click', closeModal);
+    if (closeBtn) closeBtn.addEventListener('click', maktablar__closeModal);
+    if (closeHeaderBtn) closeHeaderBtn.addEventListener('click', maktablar__closeModal);
     if (openBtn) openBtn.addEventListener('click', function(){ var m=document.getElementById('maktablar__newSchoolModal'); if(m) m.classList.remove('hidden'); });
-    if (copyFullBtn) copyFullBtn.addEventListener('click', copyApiKey);
-    if (copyInlineBtn) copyInlineBtn.addEventListener('click', copyApiKey);
-    if (togglePassBtn) togglePassBtn.addEventListener('click', togglePassword);
+    if (copyFullBtn) copyFullBtn.addEventListener('click', maktablar__copyApiKey);
+    if (copyInlineBtn) copyInlineBtn.addEventListener('click', maktablar__copyApiKey);
+    if (togglePassBtn) togglePassBtn.addEventListener('click', maktablar__togglePassword);
   })();
 </script></main></div></section>
 <section class="view-page bg-surface font-body-md text-body-md text-on-surface" data-page="maktab-admin" style="display:none;"><aside class="fixed left-0 top-0 h-full w-72 bg-primary-container text-on-primary z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.08)]"><div class="flex flex-col"><div class="h-16 px-space-lg flex items-center gap-space-sm bg-primary"><span class="material-symbols-outlined text-secondary-fixed text-headline-md font-headline-md">verified_user</span><div><p class="font-title-md text-title-md text-on-primary leading-tight">TTB — Davomat</p><p class="font-badge-label text-badge-label text-on-primary-container tracking-wider uppercase">Davlat Tizimi v2.4</p></div></div><div class="px-space-md py-space-sm"><div class="bg-primary/50 rounded p-space-xs px-space-sm flex items-center justify-between mb-space-sm"><span class="font-badge-label text-badge-label uppercase text-on-primary-container tracking-wider">Hududiy Nazorat</span><span class="font-code-key text-code-key text-secondary-fixed">REG-7704</span></div></div><nav class="flex flex-col gap-space-xs px-space-md" data-active-classes="bg-secondary text-on-secondary font-title-md shadow-[0_1px_4px_rgba(0,0,0,0.12)]"><a class="flex items-center gap-space-md px-space-md py-space-sm rounded text-on-primary-container hover:bg-primary hover:text-on-primary transition-colors" data-path="dashboard" data-nav="dashboard" href="#"><span class="material-symbols-outlined text-headline-md">dashboard</span><span class="font-title-md text-title-md">Asosiy</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded text-on-primary-container hover:bg-primary hover:text-on-primary transition-colors" data-path="maktablar" data-nav="maktablar" href="#"><span class="material-symbols-outlined text-headline-md">apartment</span><span class="font-title-md text-title-md">Maktablar</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded text-on-primary-container hover:bg-primary hover:text-on-primary transition-colors" data-path="xodimlar" data-nav="placeholder" href="#"><span class="material-symbols-outlined text-headline-md">badge</span><span class="font-title-md text-title-md">Xodimlar</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded text-on-primary-container hover:bg-primary hover:text-on-primary transition-colors" data-path="oquvchilar-davomati" data-nav="placeholder" href="#"><span class="material-symbols-outlined text-headline-md">how_to_reg</span><span class="font-title-md text-title-md">O'quvchilar Davomati</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded text-on-primary-container hover:bg-primary hover:text-on-primary transition-colors" data-path="xodimlar-davomati" data-nav="placeholder" href="#"><span class="material-symbols-outlined text-headline-md">timer</span><span class="font-title-md text-title-md">Xodimlar Davomati</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded text-on-primary-container hover:bg-primary hover:text-on-primary transition-colors" data-path="face-id-kiosklari" data-nav="face-id-kiosklari" href="#"><span class="material-symbols-outlined text-headline-md">photo_camera_front</span><span class="font-title-md text-title-md">Face ID Kiosklari</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded text-on-primary-container hover:bg-primary hover:text-on-primary transition-colors" data-path="tizim-sozlamalari" data-nav="placeholder" href="#"><span class="material-symbols-outlined text-headline-md">admin_panel_settings</span><span class="font-title-md text-title-md">Tizim Sozlamalari</span></a></nav></div><div class="p-space-md bg-primary/40"><div class="bg-surface-container-lowest/10 p-space-sm rounded flex items-center justify-between"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary-fixed text-headline-md font-headline-md">security</span><div><p class="font-body-sm text-body-sm text-on-primary font-bold">Himoyalangan Kanal</p><p class="font-code-key text-code-key text-secondary-fixed-dim">SSL 256-bit TLS</p></div></div><span class="material-symbols-outlined text-on-primary-container text-body-lg font-body-lg">lock</span></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest/95 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.06)] z-40"><div class="w-full h-16 px-space-lg flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><img alt="Tuman Ta'lim Boshqarmasi Logotipi" class="h-8 w-auto object-contain" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0OCA0OCIgZmlsbD0ibm9uZSI+CiAgPHJlY3Qgd2lkdGg9IjQ4IiBoZWlnaHQ9IjQ4IiByeD0iMTAiIGZpbGw9IiMxNjMyNWMiLz4KICA8cGF0aCBkPSJNMjQgMTBMMTAgMTdMMjQgMjRMMzggMTdMMjQgMTBaIiBmaWxsPSIjM2I4MmY2Ii8+CiAgPHBhdGggZD0iTTE0IDIxLjVWMzAuNUMxNCAzMC41IDE4IDM0IDI0IDM0QzMwIDM0IDM0IDMwLjUgMzQgMzAuNVYyMS41IiBzdHJva2U9IiNmMWY1ZjkiIHN0cm9rZS13aWR0aD0iMi41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KICA8Y2lyY2xlIGN4PSIyNCIgY3k9IjI0IiByPSIzIiBmaWxsPSIjZDk4YzJiIi8+CiAgPHBhdGggZD0iTTM4IDE5VjI5IiBzdHJva2U9IiM5M2M1ZmQiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgPGNpcmNsZSBjeD0iMzgiIGN5PSIzMCIgcj0iMS41IiBmaWxsPSIjOTNjNWZkIi8+Cjwvc3ZnPg=="/><div class="flex flex-col"><span class="font-title-lg text-title-lg text-primary leading-tight font-bold">Tuman Ta'lim Boshqarmasi</span><span class="font-body-sm text-body-sm text-on-surface-variant">Yagona avtomatlashtirilgan davomat tizimi</span></div></div><div class="flex items-center gap-space-md"><div class="hidden xl:flex items-center bg-surface-container-low p-space-xs rounded gap-space-xs"><span class="font-badge-label text-badge-label uppercase px-space-sm py-space-xs rounded bg-primary text-on-primary font-bold">Tuman Admin</span><button data-nav="maktab-admin" class="font-badge-label text-badge-label uppercase px-space-sm py-space-xs rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button">32-Maktab Admin</button><button data-nav="face-id-kiosklari" class="font-badge-label text-badge-label uppercase px-space-sm py-space-xs rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button">Kiosk Rejimi</button></div><div class="hidden md:flex items-center gap-space-xs bg-surface-container-low px-space-md py-space-xs rounded"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span><span class="font-tabular-data text-tabular-data text-on-surface font-medium">Markaziy server: Faol 🟢</span></div><div class="hidden lg:flex items-center gap-space-xs text-on-surface-variant bg-surface-container-low px-space-md py-space-xs rounded font-tabular-data text-tabular-data"><span class="material-symbols-outlined text-body-lg font-body-lg">schedule</span><span>Toshkent: 08:42:15</span></div><div class="relative flex items-center"><button class="p-space-xs text-on-surface-variant hover:text-primary transition-colors rounded hover:bg-surface-container-low" type="button"><span class="material-symbols-outlined text-headline-md">notifications</span></button><span class="absolute top-1 right-1 w-2 h-2 bg-error rounded-full"></span></div><div class="flex items-center gap-space-sm pl-space-sm bg-surface-container-low/60 rounded py-space-xs px-space-sm"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSI+CiAgPHJlY3Qgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiByeD0iMjAiIGZpbGw9IiNjYmQ1ZTEiLz4KICA8Y2lyY2xlIGN4PSIyMCIgY3k9IjE2IiByPSI3IiBmaWxsPSIjOTRhM2I4Ii8+CiAgPHBhdGggZD0iTTYgMzVjMC04IDYtMTMgMTQtMTNzMTQgNSAxNCAxMyIgZmlsbD0iIzk0YTNiOCIvPgo8L3N2Zz4="/><div class="flex flex-col text-left"><span class="font-title-md text-title-md text-primary leading-tight font-bold">A. Qodirov</span><span class="font-body-sm text-body-sm text-on-surface-variant">Tuman Ta'lim Mutasaddisi</span></div></div></div></div></header><main class="relative w-full pt-16 bg-surface min-h-screen px-space-lg"><div class="flex flex-col w-full pb-space-xl">
@@ -1853,9 +1853,9 @@
       studentModal.classList.add('hidden');
     }
 
-    if (openModalBtn) openModalBtn.addEventListener('click', openModal);
-    if (closeModalBtn) closeModalBtn.addEventListener('click', closeModal);
-    if (cancelModalBtn) cancelModalBtn.addEventListener('click', closeModal);
+    if (openModalBtn) openModalBtn.addEventListener('click', maktab_admin__openModal);
+    if (closeModalBtn) closeModalBtn.addEventListener('click', maktab_admin__closeModal);
+    if (cancelModalBtn) cancelModalBtn.addEventListener('click', maktab_admin__closeModal);
 
     studentModal.addEventListener('click', (e) => {
       if (e.target === studentModal) maktab_admin__closeModal();
@@ -2110,7 +2110,7 @@
           timeEl.textContent = `${hours}:${minutes}:${seconds}`;
         }
       }
-      setInterval(updateClock, 1000);
+      setInterval(face_id_kiosklari__updateClock, 1000);
       face_id_kiosklari__updateClock();
 
       const btnStudent = document.getElementById('face_id_kiosklari__btn-mode-student');
