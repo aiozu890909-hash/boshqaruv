@@ -2222,6 +2222,21 @@
   }
 
   // --------------------------------------------------------------------
+  // 0) DIAGNOSTIKA PANELI — sahifa qanday ochilganini aniq ko'rsatadi
+  // --------------------------------------------------------------------
+  (function showDiagnostics() {
+    var ok = (typeof google !== "undefined" && google.script && google.script.run);
+    var bar = document.createElement("div");
+    bar.style.cssText = "position:fixed;top:0;left:0;right:0;z-index:999999;padding:8px 14px;" +
+      "font-family:monospace;font-size:12px;color:#fff;background:" + (ok ? "#16a34a" : "#b91c1c") + ";" +
+      "word-break:break-all;";
+    bar.innerHTML =
+      (ok ? "✅ google.script.run MAVJUD — sahifa to'g'ri ochilgan. " : "❌ google.script.run YO'Q. ") +
+      "URL: " + window.location.href;
+    document.body.prepend(bar);
+  })();
+
+  // --------------------------------------------------------------------
   // 1) LOGIN
   // --------------------------------------------------------------------
   var loginForm = document.getElementById("login__loginForm");
