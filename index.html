@@ -2173,42 +2173,29 @@
 <script>
 /* ==========================================================================
    BACKEND INTEGRATSIYASI — Tuman Ta'lim Boshqarmasi Davomat Tizimi
-   Dizaynga tegmaydi, faqat mavjud forma/jadvallarni haqiqiy
-   google.script.run so'rovlariga ulaydi.
+   Dizaynga tegmaydi, faqat mavjud forma/jadvallarni haqiqiy backendga
+   (Google Apps Script) ulaydi — oddiy fetch() orqali, istalgan joydan
+   (GitHub Pages, lokal fayl va hokazo) ishlaydi.
    ========================================================================== */
 (function () {
   "use strict";
   var token = null;
   var user = null;
 
-  function apiCall(action, data) {
-    return new Promise(function (resolve) {
-      try {
-        if (typeof google === "undefined" || !google.script || !google.script.run) {
-          resolve({
-            error: true,
-            message: "google.script.run topilmadi. Sahifa Apps Script \"Deploy\" havolasi (/exec) orqali ochilishi kerak — faylni to'g'ridan-to'g'ri brauzerda ochish ishlamaydi."
-          });
-          return;
-        }
-        var settled = false;
-        var timer = setTimeout(function () {
-          if (settled) return;
-          settled = true;
-          resolve({ error: true, message: "Server 20 soniyada javob bermadi (timeout). Qayta urinib ko'ring." });
-        }, 20000);
+  var API_URL = "https://script.google.com/macros/s/AKfycbyi7QaRZME4mtbGInMPu3V-heXzbNm4yMopcwf1HOeWiv_oJ06QNFLxwYvQLBIJdNzu/exec";
 
-        google.script.run
-          .withSuccessHandler(function (r) { if (settled) return; settled = true; clearTimeout(timer); resolve(r); })
-          .withFailureHandler(function (e) {
-            if (settled) return; settled = true; clearTimeout(timer);
-            resolve({ error: true, message: (e && e.message) || "Server xatosi (failure handler)" });
-          })
-          .api(Object.assign({ action: action, token: token }, data || {}));
-      } catch (err) {
-        resolve({ error: true, message: "Mijoz tomonida xato: " + (err && err.message) });
-      }
-    });
+  function apiCall(action, data) {
+    var payload = Object.assign({ action: action, token: token }, data || {});
+    // MUHIM: Content-Type'ni maxsus qo'ymaymiz — aks holda brauzer CORS
+    // "preflight" so'rovi yuboradi va Apps Script buni qo'llab-quvvatlamaydi.
+    return fetch(API_URL, {
+      method: "POST",
+      body: JSON.stringify(payload),
+    })
+      .then(function (res) { return res.json(); })
+      .catch(function (err) {
+        return { error: true, message: "Serverga ulanib bo'lmadi: " + (err && err.message) };
+      });
   }
 
   function toast(msg, isErr) {
@@ -2220,21 +2207,6 @@
     document.body.appendChild(t);
     setTimeout(function () { t.remove(); }, 4200);
   }
-
-  // --------------------------------------------------------------------
-  // 0) DIAGNOSTIKA PANELI — sahifa qanday ochilganini aniq ko'rsatadi
-  // --------------------------------------------------------------------
-  (function showDiagnostics() {
-    var ok = (typeof google !== "undefined" && google.script && google.script.run);
-    var bar = document.createElement("div");
-    bar.style.cssText = "position:fixed;top:0;left:0;right:0;z-index:999999;padding:8px 14px;" +
-      "font-family:monospace;font-size:12px;color:#fff;background:" + (ok ? "#16a34a" : "#b91c1c") + ";" +
-      "word-break:break-all;";
-    bar.innerHTML =
-      (ok ? "✅ google.script.run MAVJUD — sahifa to'g'ri ochilgan. " : "❌ google.script.run YO'Q. ") +
-      "URL: " + window.location.href;
-    document.body.prepend(bar);
-  })();
 
   // --------------------------------------------------------------------
   // 1) LOGIN
@@ -2285,7 +2257,6 @@
       if (r.error) { if (errBox) errBox.textContent = r.message; return; }
       if (errBox) errBox.textContent = "";
 
-      // real natijani mavjud "Muvaffaqiyatli" modalga yozamiz
       var idEl = document.getElementById("maktablar__schoolIdVal");
       var loginEl = document.getElementById("maktablar__adminLoginVal");
       var passEl = document.getElementById("maktablar__passwordText");
@@ -2399,7 +2370,9 @@
     } catch (e) { console.warn("loadDashboard", e); }
   }
 
-  window.__onShowPage = function (slug) {
+  var originalShowPage = window.__showPage;
+  window.__showPage = function (slug) {
+    originalShowPage(slug);
     if (slug === "maktablar") loadMaktablar();
     if (slug === "dashboard") loadDashboard();
   };
