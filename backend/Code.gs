@@ -574,10 +574,16 @@ function api(payload) {
 function doGet(e) {
   const p = (e && e.parameter) || {};
   if (!p.action) {
-    return HtmlService.createHtmlOutputFromFile("index")
-      .setTitle(TUMAN_NOMI + " — Davomat Tizimi")
-      .addMetaTag("viewport", "width=device-width, initial-scale=1")
-      .setXFrameOptionsMode(HtmlService.XFrameOptionsMode.ALLOWALL);
+    // Sayt endi GitHub Pages'da turadi va backendga fetch() orqali murojaat qiladi.
+    // Agar loyihada "index" HTML fayli bo'lsa, uni ko'rsatamiz, bo'lmasa oddiy holat xabarini.
+    try {
+      return HtmlService.createHtmlOutputFromFile("index")
+        .setTitle(TUMAN_NOMI + " — Davomat Tizimi")
+        .addMetaTag("viewport", "width=device-width, initial-scale=1")
+        .setXFrameOptionsMode(HtmlService.XFrameOptionsMode.ALLOWALL);
+    } catch (err) {
+      return jsonResponse_({ ok: true, service: TUMAN_NOMI + " — Davomat API", status: "ishlayapti" });
+    }
   }
   try {
     return dispatch_({ action: p.action, api_key: p.api_key });
